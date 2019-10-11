@@ -1,10 +1,8 @@
 # Using Sample Data
-  <a href="https://www.sas.com/certify">
-    <img src="https://img.shields.io/badge/-SAS%20Training-red.svg?" alt="Training"> </a>
-  <a href="https://documentation.sas.com">
-    <img src="https://img.shields.io/badge/-Documentation-yellowgreen.svg?" alt="Documentation"> </a>    <a href="https://blogs.sas.com/content/topic/programming-tips/">
-    <img src="https://img.shields.io/badge/Blog-Programming%20Tips-blue.svg?" alt="Blog"> </a> <a href="https://communities.sas.com" alt=SAS Communities> </a>
-    <img src="https://img.shields.io/badge/-SAS%20Communities-orange">  </a>
+  <a href="https://www.sas.com/certify"> <img src="https://img.shields.io/badge/-SAS%20Training-red.svg?" alt="Training"> </a>
+  <a href="https://documentation.sas.com"> <img src="https://img.shields.io/badge/-Documentation-yellowgreen.svg?" alt="Documentation"></a>
+  <a href="https://blogs.sas.com/content/topic/programming-tips/">     <img src="https://img.shields.io/badge/Blog-Programming%20Tips-blue.svg?" alt="Blog"> </a> 
+    <a href="https://communities.sas.com" alt=SAS Communities> <img src="https://img.shields.io/badge/-SAS%20Communities-orange">  </a>
 
 This README contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4.
 ### Requirements
