@@ -60,4 +60,13 @@ Your practice data is now created and ready for you to use.
 	
 **Note:** When you end your SAS session, the Path macro variable in the **cre8data.sas** program is reset. To avoid having to rerun **cre8data.sas** every time, run the **libname.sas** program from your sample data folder to restore the libraries.
 	
-
+## Additional Resources
+* [SAS Certified Specialist Base Programming Using SAS 9.4: Certification Prep Guide and Workbook](https://www.sas.com/store/prodBK_72102_en.html)
+* SAS Certified Professional Advanced Programming Using SAS 9.4: Certification Prep Guide and Workbook
+* [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
+* [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche & Susan J. Slaughter
+* [Learning SAS by Example: A Programmer's Guide, Second Edition](https://www.sas.com/store/books/categories/getting-started/learning-sas-by-example-a-programmer-s-guide-second-edition/prodBK_71442_en.html) by Ron Cody
+* [Fundamentals of Programming in SAS: A Case Studies Approach](https://www.sas.com/store/books/categories/getting-started/fundamentals-of-programming-in-sas-a-case-studies-approach/prodBK_71342_en.html) by James Blum & Jonathan Duggins
+* [SAS Programming Glossary](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=pgmsasgl&docsetTarget=glossary.htm)
+* [Free SAS Training](https://www.sas.com/en_us/training/offers/free-training.html)
+* [Step-by-Step Programming with Base SAS 9.4 Documentation](https://go.documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=basess&docsetTarget=titlepage.htm)
