@@ -1,24 +1,20 @@
 # Using Sample Data
-
+## Overview
+  <a href="https://blogs.sas.com/content/topic/programming-tips/">
+    <img src="https://img.shields.io/badge/Blog-Programming%20Tips-blue.svg?" alt="Blog"> </a>
+  <a href="https://www.sas.com/certify">
+    <img src="https://img.shields.io/badge/-SAS%20Training-red.svg?" alt="Training"> </a>
+  <a href="https://documentation.sas.com">
+    <img src="https://img.shields.io/badge/-Documentation-yellowgreen.svg?" alt="Documentation"> </a>  
+    
 This README contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4.
-
-## Requirements
-
+### Requirements
 To complete the examples in this book, you must have access to SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
-
-
-## File Contents
-
-
+### File Contents
 - [cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas) contains SAS code to set up your SAS library with data sets. 
-
-
 - [cred8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
-
-## Setting Up Practice Data for SAS onDemand for Academics
-
+### Setting Up Practice Data for SAS onDemand for Academics
 To set up your sample data program in SAS OnDemand:
-
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
 2. Click on the **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS.
@@ -33,10 +29,9 @@ To set up your sample data program in SAS OnDemand:
 12. In the Path macro variable, replace `/folders/myfolders` with the path to the **certadv** folder. Right-click the **certadv** folder in SAS Studio and click **Properties**. Copy the path in the Location box and paste it into your %LET statement. 
 13. Save and then run the **cre8data.sas** program.
 
-## Setting Up Practice Data on Other SAS Environments
+### Setting Up Practice Data on Other SAS Environments
 
 To set up your sample data program on other SAS environments:
-
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
 2. Click on the **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS. 
