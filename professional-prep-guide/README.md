@@ -57,7 +57,6 @@ Your practice data is now created and ready for you to use.
 **Note:** When you end your SAS session, the Path macro variable in the **cre8data.sas** program is reset. To avoid having to rerun **cre8data.sas** every time, run the **libname.sas** program from your sample data folder to restore the libraries.
 	
 ## Additional Resources
-* [SAS Certified Specialist Base Programming Using SAS 9.4: Certification Prep Guide and Workbook](https://www.sas.com/store/prodBK_72102_en.html)
 * SAS Certified Professional Advanced Programming Using SAS 9.4: Certification Prep Guide and Workbook
 * [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
 * [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche & Susan J. Slaughter
