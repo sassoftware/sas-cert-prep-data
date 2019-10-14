@@ -12,23 +12,23 @@ This README contains instructions for creating practice data sets for some of th
 ### Requirements
 To complete the examples in this book, you must have access to SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
 ### File Contents
-- [cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas) contains SAS code to set up your SAS library with data sets. 
-- [cre8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
-- [cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8flatfiles.sas) contains SAS code that creates Excel, CSV, and other files. 
-- [cre8workdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8workdata.sas) contains SAS code that creates your temporary SAS data sets. 
-- [ehs01.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs01.sas) contains SAS code that is needed in order to complete a Workbook exercise.
-- [ehs02.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs02.sas) contains SAS code that is needed in order to complete a Workbook exercise.
+- [cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8data.sas) contains SAS code to set up your SAS library with data sets. 
+- [cre8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
+- [cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8flatfiles.sas) contains SAS code that creates Excel, CSV, and other files. 
+- [cre8workdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8workdata.sas) contains SAS code that creates your temporary SAS data sets. 
+- [ehs01.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/ehs01.sas) contains SAS code that is needed in order to complete a Workbook exercise.
+- [ehs02.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/ehs02.sas) contains SAS code that is needed in order to complete a Workbook exercise.
 ### Setting Up Practice Data for SAS onDemand for Academics
 To set up your sample data program in SAS OnDemand:
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
 2. Click on the **[specialist-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/specialist-prep-guide)**.
-3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS.
-4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
-5. Open the **[cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8flatfiles.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8flatfiles.sas** to the same location as **cre8data.sas**.
-6. Open the **[cre8workdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8workdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8workdata.sas** to the same location as **cre8data.sas**. 
+3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS.
+4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
+5. Open the **[cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8flatfiles.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8flatfiles.sas** to the same location as **cre8data.sas**.
+6. Open the **[cre8workdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8workdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8workdata.sas** to the same location as **cre8data.sas**. 
 7. Create a folder named **ehs** in the same location as **cre8data.sas**. 
-8. Open the **[ehs01.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs01.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs01.sas** to the **ehs** folder. 
-9. Open the **[ehs02.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs02.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs02.sas** to the **ehs** folder. 
+8. Open the **[ehs01.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/ehs01.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs01.sas** to the **ehs** folder. 
+9. Open the **[ehs02.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/ehs02.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs02.sas** to the **ehs** folder. 
 
 10. Log on to SAS OnDemand for Academics and open SAS Studio.
 11. Right-click the **Files** (Home) folder, and then select **New**→**Folder**.
