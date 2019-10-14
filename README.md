@@ -14,8 +14,8 @@ The SAS Certification prep guides provide sample data files to support users who
 To complete the examples in this book, you must have access to SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
 
 ### Prep Guides
-- [SAS Certified Specialist Prep Guide Base Programming Using SAS 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-specialist-prep-guide-base-programming-using-sas-9-4/prodBK_72102_en.html) prepares you to take the new SAS 9.4 Base Programming -- Performance-Based Exam. The associated data sample data directory is named [specialist-prep-guide](https://github.com/sassoftware/sas-cert-prep-data/tree/master/specialist-prep-guide).
-- [SAS Certified Professional Prep Guide Advanced Programming Using SAS 9.4]() prepares you to take the new SAS 9.4 Advanced Programming -Performance-Based Exam. The associated data sample data directory is named [professional-prep-guide](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide).
+- [SAS Certified Specialist Prep Guide Base Programming Using SAS 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-specialist-prep-guide-base-programming-using-sas-9-4/prodBK_72102_en.html) prepares you to take the new SAS 9.4 Base Programming - Performance-Based Exam. The associated data sample data directory is named [specialist-prep-guide](https://github.com/sassoftware/sas-cert-prep-data/tree/master/specialist-prep-guide).
+- [SAS Certified Professional Prep Guide Advanced Programming Using SAS 9.4]() prepares you to take the new SAS 9.4 Advanced Programming  - Performance-Based Exam. The associated data sample data directory is named [professional-prep-guide](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide).
 
 ### Contributing
 We welcome your contributions! :handshake: Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on how to submit contributions to this project.
