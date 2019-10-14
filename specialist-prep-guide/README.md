@@ -13,22 +13,32 @@ This README contains instructions for creating practice data sets for some of th
 To complete the examples in this book, you must have access to SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
 ### File Contents
 - [cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas) contains SAS code to set up your SAS library with data sets. 
-- [cred8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
+- [cre8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
+- [cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8flatfiles.sas) contains SAS code that creates Excel, CSV, and other files. 
+- [cre8workdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8workdata.sas) contains SAS code that creates your temporary SAS data sets. 
+- [ehs01.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs01.sas) contains SAS code that is needed in order to complete a Workbook exercise.
+- [ehs02.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs02.sas) contains SAS code that is needed in order to complete a Workbook exercise.
 ### Setting Up Practice Data for SAS onDemand for Academics
 To set up your sample data program in SAS OnDemand:
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
 2. Click on the **[specialist-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/specialist-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS.
 4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
-5. Log on to SAS OnDemand for Academics and open SAS Studio.
-6. Right-click the **Files** (Home) folder, and then select **New**→**Folder**.
-7. Name the new folder **cert** and click **Save**.
-8. Right-click the **cert** folder and select **Upload Files**.
-9. Click **Choose Files** and navigate to the **cert** folder within the practice-data folder on your local machine.
-10. Select all program files and click **Open**. All available programs are listed under **Select Files**. Click **Upload**.
-11. Open and edit the **cre8data.sas** program.
-12. In the Path macro variable, replace `/folders/myfolders` with the path to the **cert** folder. Right-click the **cert** folder in SAS Studio and click **Properties**. Copy the path in the Location box and paste it into your %LET statement. 
-13. Save and then run the **cre8data.sas** program.
+5. Open the **[cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8flatfiles.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8flatfiles.sas** to the same location as **cre8data.sas**.
+6. Open the **[cre8workdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8workdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8workdata.sas** to the same location as **cre8data.sas**. 
+7. Create a folder named **ehs** in the same location as **cre8data.sas**. 
+8. Open the **[ehs01.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs01.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs01.sas** to the **ehs** folder. 
+9. Open the **[ehs02.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs02.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs02.sas** to the **ehs** folder. 
+
+10. Log on to SAS OnDemand for Academics and open SAS Studio.
+11. Right-click the **Files** (Home) folder, and then select **New**→**Folder**.
+12. Name the new folder **cert** and click **Save**.
+13. Right-click the **cert** folder and select **Upload Files**.
+14. Click **Choose Files** and navigate to the **cert** folder within the practice-data folder on your local machine.
+15. Select all program files and click **Open**. All available programs are listed under **Select Files**. Click **Upload**.
+16. Open and edit the **cre8data.sas** program.
+17. In the Path macro variable, replace `/folders/myfolders` with the path to the **cert** folder. Right-click the **cert** folder in SAS Studio and click **Properties**. Copy the path in the Location box and paste it into your %LET statement. 
+18. Save and then run the **cre8data.sas** program.
 
 ### Setting Up Practice Data on Other SAS Environments
 
@@ -40,7 +50,18 @@ To set up your sample data program on other SAS environments:
 	**Note:** It is recommended that you create a folder in a location that is accessible to SAS and name that folder certadv. All of the librefs associated with the Professional Prep Guide uses the certadv libref. 
 
 4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
-5. Open the **cre8data.sas** program in the SAS environment of your choice. 
+
+5. Open the **[cre8flatfiles.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8flatfiles.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8flatfiles.sas** to the same location as **cre8data.sas**.
+
+6. Open the **[cre8workdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8workdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8workdata.sas** to the same location as **cre8data.sas**. 
+
+7. Create a folder named **ehs** in the same location as **cre8data.sas**. 
+
+8. Open the **[ehs01.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs01.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs01.sas** to the **ehs** folder. 
+
+9. Open the **[ehs02.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/ehs02.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **ehs02.sas** to the **ehs** folder. 
+
+10. Open the **cre8data.sas** program in the SAS environment of your choice. 
 
 	SAS Studio: In the Navigation pane, expand **Files and Folders** and then navigate to the folder where you saved your practice data. 
 	
@@ -48,7 +69,7 @@ To set up your sample data program on other SAS environments:
 
 	SAS windowing environment: Click **File**→ **Open Program**, and then navigate to the folder where you saved your practice data. 
 
-6. In the Path macro variable, replace `/folders/myfolders` with the path to the folder where you saved your practice data and run the program `%let path=/folders/myfolders/my-folder-name;`.
+11. In the Path macro variable, replace `/folders/myfolders` with the path to the folder where you saved your practice data and run the program `%let path=/folders/myfolders/my-folder-name;`.
 
 	*Important:* The location that you specify for the Path macro variable and the location of your downloaded SAS programs should be the same location. Otherwise, the cre8data.sas program cannot create the practice data.
 
