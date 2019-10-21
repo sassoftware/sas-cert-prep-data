@@ -23,8 +23,8 @@ We welcome your contributions! :handshake: Please read [CONTRIBUTING.md](./CONTR
 ### License
 This project is licensed under the [Apache 2.0 License](./LICENSE).
 ### Additional Resources
-* [SAS Certified Specialist Base Programming Using SAS 9.4: Certification Prep Guide and Workbook](https://www.sas.com/store/prodBK_72102_en.html)
-* SAS Certified Professional Advanced Programming Using SAS 9.4: Certification Prep Guide and Workbook
+* [SAS® Certified Specialist Prep Guide: Base Programming Using SAS® 9.4](https://www.sas.com/store/prodBK_72102_en.html)
+* [SAS® Certified Professional Prep Guide: Advanced Programming Using SAS® 9.4](https://www.sas.com/store/prodBK_72102_en.html)
 * [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
 * [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche & Susan J. Slaughter
 * [Learning SAS by Example: A Programmer's Guide, Second Edition](https://www.sas.com/store/books/categories/getting-started/learning-sas-by-example-a-programmer-s-guide-second-edition/prodBK_71442_en.html) by Ron Cody
