@@ -5,7 +5,7 @@
     <a href="https://communities.sas.com" alt=SAS Communities> <img src="https://img.shields.io/badge/-SAS%20Communities-orange">  </a>
 
 ## Overview
-This ReadMe file contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4. 
+This README file contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4. 
 
 *The data sets that are created during the execution of the **cre8data.sas** and **cre8permdata.sas** programs are fictional or publicly available data. Any resemblance to actual data is purely coincidental and not intentional.*
 
