@@ -5,19 +5,19 @@
     <a href="https://communities.sas.com" alt=SAS Communities> <img src="https://img.shields.io/badge/-SAS%20Communities-orange">  </a>
 
 ## Overview
-This README contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4. 
+This ReadMe file contains instructions for creating practice data sets for some of the examples in the SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4. 
 
 *The data sets that are created during the execution of the **cre8data.sas** and **cre8permdata.sas** programs are fictional or publicly available data. Any resemblance to actual data is purely coincidental and not intentional.*
 
 ### Requirements
-To complete the examples in this book, you must have access to SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
+To complete the examples in this book, you must have access to the SAS windowing environment, SAS Enterprise Guide, SAS Studio, or SAS University Edition.
 ### File Contents
 - [cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas) contains SAS code to set up your SAS library with data sets. 
 - [cred8permdata.sas ](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas) contains SAS code that creates your SAS data sets. 
 ### Setting Up Practice Data for SAS onDemand for Academics
 To set up your sample data program in SAS OnDemand:
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
-2. Click on the **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
+2. Click on **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS.
 4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
 5. Log on to SAS OnDemand for Academics and open SAS Studio.
@@ -34,7 +34,7 @@ To set up your sample data program in SAS OnDemand:
 
 To set up your sample data program on other SAS environments:
 1. Navigate to [https://github.com/sassoftware/sas-cert-prep-data](https://github.com/sassoftware/sas-cert-prep-data).
-2. Click on the **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
+2. Click the **[professional-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/professional-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/professional-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS. 
 
 	**Note:** It is recommended that you create a folder in a location that is accessible to SAS and name that folder certadv. All of the librefs associated with the Professional Prep Guide uses the certadv libref. 
@@ -57,11 +57,11 @@ Your practice data is now created and ready for you to use.
 **Note:** When you end your SAS session, the Path macro variable in the **cre8data.sas** program is reset. To avoid having to rerun **cre8data.sas** every time, run the **libname.sas** program from your sample data folder to restore the libraries.
 	
 ## Additional Resources
-* SAS Certified Professional Advanced Programming Using SAS 9.4: Certification Prep Guide and Workbook
+* [SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-professional-prep-guide-advanced-programming-using-sas-9-4/prodBK_73006_en.html)
 * [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
-* [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche & Susan J. Slaughter
+* [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche and Susan J. Slaughter
 * [Learning SAS by Example: A Programmer's Guide, Second Edition](https://www.sas.com/store/books/categories/getting-started/learning-sas-by-example-a-programmer-s-guide-second-edition/prodBK_71442_en.html) by Ron Cody
-* [Fundamentals of Programming in SAS: A Case Studies Approach](https://www.sas.com/store/books/categories/getting-started/fundamentals-of-programming-in-sas-a-case-studies-approach/prodBK_71342_en.html) by James Blum & Jonathan Duggins
+* [Fundamentals of Programming in SAS: A Case Studies Approach](https://www.sas.com/store/books/categories/getting-started/fundamentals-of-programming-in-sas-a-case-studies-approach/prodBK_71342_en.html) by James Blum and Jonathan Duggins
 * [SAS Programming Glossary](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=pgmsasgl&docsetTarget=glossary.htm)
 * [Free SAS Training](https://www.sas.com/en_us/training/offers/free-training.html)
 * [Step-by-Step Programming with Base SAS 9.4 Documentation](https://go.documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=basess&docsetTarget=titlepage.htm)
