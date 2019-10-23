@@ -80,9 +80,9 @@ Your practice data is now created and ready for you to use.
 ## Additional Resources
 * [SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-professional-prep-guide-advanced-programming-using-sas-9-4/prodBK_73006_en.html)
 * [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
-* [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche & Susan J. Slaughter
+* [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche and Susan J. Slaughter
 * [Learning SAS by Example: A Programmer's Guide, Second Edition](https://www.sas.com/store/books/categories/getting-started/learning-sas-by-example-a-programmer-s-guide-second-edition/prodBK_71442_en.html) by Ron Cody
-* [Fundamentals of Programming in SAS: A Case Studies Approach](https://www.sas.com/store/books/categories/getting-started/fundamentals-of-programming-in-sas-a-case-studies-approach/prodBK_71342_en.html) by James Blum & Jonathan Duggins
+* [Fundamentals of Programming in SAS: A Case Studies Approach](https://www.sas.com/store/books/categories/getting-started/fundamentals-of-programming-in-sas-a-case-studies-approach/prodBK_71342_en.html) by James Blum and Jonathan Duggins
 * [SAS Programming Glossary](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=pgmsasgl&docsetTarget=glossary.htm)
 * [Free SAS Training](https://www.sas.com/en_us/training/offers/free-training.html)
 * [Step-by-Step Programming with Base SAS 9.4 Documentation](https://go.documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=basess&docsetTarget=titlepage.htm)
