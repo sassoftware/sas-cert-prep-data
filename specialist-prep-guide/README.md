@@ -47,7 +47,7 @@ To set up your sample data program on other SAS environments:
 2. Click on the **[specialist-prep-guide directory](https://github.com/sassoftware/sas-cert-prep-data/tree/master/specialist-prep-guide)**.
 3. Open the **[cre8data.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8data.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8data.sas** to a location that is accessible to SAS. 
 
-	**Note:** It is recommended that you create a folder in a location that is accessible to SAS and name that folder certadv. All of the librefs associated with the Specialist Prep Guide uses the cert libref. 
+	**Note:** It is recommended that you create a folder in a location that is accessible to SAS and name that folder cert. All of the librefs associated with the Specialist Prep Guide uses the cert libref. 
 
 4. Open the **[cre8premdata.sas](https://github.com/sassoftware/sas-cert-prep-data/blob/master/specialist-prep-guide/cre8permdata.sas)** program and click **Raw**. Right-click anywhere on the screen and select **Save As**. Save the **cre8premdata.sas** to the same location as **cre8data.sas**. 
 
@@ -78,6 +78,7 @@ Your practice data is now created and ready for you to use.
 **Note:** When you end your SAS session, the Path macro variable in the **cre8data.sas** program is reset. To avoid having to rerun **cre8data.sas** every time, run the **libname.sas** program from your sample data folder to restore the libraries.
 	
 ## Additional Resources
+* [SAS Certified Specialist Prep Guide: Base Programming Using SAS 9.4](https://www.sas.com/store/prodBK_72102_en.html)
 * [SAS Certified Professional Prep Guide: Advanced Programming Using SAS 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-professional-prep-guide-advanced-programming-using-sas-9-4/prodBK_73006_en.html)
 * [SAS Certification Exam | 4 Tips for Success](https://www.youtube.com/watch?v=OpQ0SMNXiYE&list=PLVV6eZFA22QwrXd6nSDU18E6XgXSMOs87&index=12&t=0s)
 * [The Little SAS Book: A Primer, Sixth Edition](https://www.sas.com/store/prodBK_73044_en.html?storeCode=SAS_US) by Lora D. Delwiche and Susan J. Slaughter
