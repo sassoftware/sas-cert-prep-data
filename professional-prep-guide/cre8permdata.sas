@@ -708,6 +708,334 @@ Random Company,21731,50.53,50.37
 Random Company,21762,50.89,49.68
 Random Company,21795,44.21,44.04
 ;;;;
+data certadv.BASEBALL(label='1986 Baseball Data');
+  infile datalines dsd truncover;
+  input Name:$18. Team:$14. nAtBat:32. nHits:32. nHome:32. nRuns:32. nRBI:32. nBB:32. YrMajor:32. CrAtBat:32. CrHits:32. CrHome:32. CrRuns:32. CrRbi:32. CrBB:32. League:$8. Division:$8. Position:$8. nOuts:32. nAssts:32. nError:32. Salary:32. Div:$16. logSalary:32.;
+  label Name="Player's Name" Team="Team at the End of 1986" nAtBat="Times at Bat in 1986" nHits="Hits in 1986" nHome="Home Runs in 1986" nRuns="Runs in 1986" nRBI="RBIs in 1986" nBB="Walks in 1986" YrMajor="Years in the Major Leagues" CrAtBat="Career Times at Bat" CrHits="Career Hits" CrHome="Career Home Runs" CrRuns="Career Runs" CrRbi="Career RBIs" CrBB="Career Walks" League="League at the End of 1986" Division="Division at the End of 1986" Position="Position(s) in 1986" nOuts="Put Outs in 1986" nAssts="Assists in 1986" nError="Errors in 1986" Salary="1987 Salary in $ Thousands" Div="League and Division" logSalary="Log Salary";
+datalines4;
+"Allanson, Andy",Cleveland,293,66,1,30,29,14,1,293,66,1,30,29,14,American,East,C,446,33,20,,AE,
+"Ashby, Alan",Houston,315,81,7,24,38,39,14,3449,835,69,321,414,375,National,West,C,632,43,10,475,NW,6.163314804
+"Davis, Alan",Seattle,479,130,18,66,72,76,3,1624,457,63,224,266,263,American,West,1B,880,82,14,480,AW,6.1737861039
+"Dawson, Andre",Montreal,496,141,20,65,78,37,11,5628,1575,225,828,838,354,National,East,RF,200,11,3,500,NE,6.2146080984
+"Galarraga, Andres",Montreal,321,87,10,39,42,30,2,396,101,12,48,46,33,National,East,1B,805,40,4,91.5,NE,4.5163389723
+"Griffin, Alfredo",Oakland,594,169,4,74,51,35,11,4408,1133,19,501,336,194,American,West,SS,282,421,25,750,AW,6.6200732065
+"Newman, Al",Montreal,185,37,1,23,8,21,2,214,42,1,30,9,24,National,East,2B,76,127,7,70,NE,4.248495242
+"Salazar, Argenis",Kansas City,298,73,0,24,24,7,3,509,108,0,41,37,12,American,West,SS,121,283,9,100,AW,4.605170186
+"Thomas, Andres",Atlanta,323,81,6,26,32,8,2,341,86,6,32,34,8,National,West,SS,143,290,19,75,NW,4.3174881135
+"Thornton, Andre",Cleveland,401,92,17,49,66,65,13,5206,1332,253,784,890,866,American,East,DH,0,0,0,1100,AE,7.0030654588
+"Trammell, Alan",Detroit,574,159,21,107,75,59,10,4631,1300,90,702,504,488,American,East,SS,238,445,22,517.143,AE,6.248319432
+"Trevino, Alex",Los Angeles,202,53,4,31,26,27,9,1876,467,15,192,186,161,National,West,C,304,45,11,512.5,NW,6.239300711
+"Van Slyke, Andy",St Louis,418,113,13,48,61,47,4,1512,392,41,205,204,203,National,East,RF,211,11,7,550,NE,6.3099182782
+"Wiggins, Alan",Baltimore,239,60,0,30,11,22,6,1941,510,4,309,103,207,American,East,2B,121,151,6,700,AE,6.551080335
+"Almon, Bill",Pittsburgh,196,43,7,29,27,30,13,3231,825,36,376,290,238,National,East,UT,80,45,8,240,NE,5.4806389233
+"Beane, Billy",Minneapolis,183,39,3,20,15,11,3,201,42,3,20,16,11,American,West,OF,118,0,0,,AW,
+"Bell, Buddy",Cincinnati,568,158,20,89,75,73,15,8068,2273,177,1045,993,732,National,West,3B,105,290,10,775,NW,6.6528630294
+"Biancalana, Buddy",Kansas City,190,46,2,24,8,15,5,479,102,5,65,23,39,American,West,SS,102,177,16,175,AW,5.1647859739
+"Bochte, Bruce",Oakland,407,104,6,57,43,65,12,5233,1478,100,643,658,653,American,West,1B,912,88,9,,AW,
+"Bochy, Bruce",San Diego,127,32,8,16,22,14,8,727,180,24,67,82,56,National,West,C,202,22,2,135,NW,4.9052747784
+"Bonds, Barry",Pittsburgh,413,92,16,72,48,65,1,413,92,16,72,48,65,National,East,CF,280,9,5,100,NE,4.605170186
+"Bonilla, Bobby",Chicago,426,109,3,55,43,62,1,426,109,3,55,43,62,American,West,O1,361,22,2,115,AW,4.7449321284
+"Boone, Bob",California,442,98,7,48,49,43,15,5982,1501,96,555,702,533,American,West,C,812,84,11,,AW,
+"Brenly, Bob",San Francisco,472,116,16,60,62,74,6,1924,489,67,242,251,240,National,West,C,518,55,3,600,NW,6.3969296552
+"Buckner, Bill",Boston,629,168,18,73,102,40,18,8424,2464,164,1008,1072,402,American,East,1B,1067,157,14,776.667,AE,6.6550116871
+"Butler, Brett",Cleveland,587,163,4,92,51,70,6,2695,747,17,442,198,317,American,East,CF,434,9,3,765,AE,6.6398758338
+"Dernier, Bob",Chicago,324,73,4,32,18,22,7,1931,491,13,291,108,180,National,East,CF,222,3,3,708.333,NE,6.5629143221
+"Diaz, Bo",Cincinnati,474,129,10,50,56,40,10,2331,604,61,246,327,166,National,West,C,732,83,13,750,NW,6.6200732065
+"Doran, Bill",Houston,550,152,6,92,37,81,5,2308,633,32,349,182,308,National,West,2B,262,329,16,625,NW,6.4377516497
+"Downing, Brian",California,513,137,20,90,95,90,14,5201,1382,166,763,734,784,American,West,LF,267,5,3,900,AW,6.8023947633
+"Grich, Bobby",California,313,84,9,42,30,39,17,6890,1833,224,1033,864,1087,American,West,2B,127,221,7,,AW,
+"Hatcher, Billy",Houston,419,108,6,55,36,22,3,591,149,8,80,46,31,National,West,CF,226,7,4,110,NW,4.7004803658
+"Horner, Bob",Atlanta,517,141,27,70,87,52,9,3571,994,215,545,652,337,National,West,1B,1378,102,8,,NW,
+"Jacoby, Brook",Cleveland,583,168,17,83,80,56,5,1646,452,44,219,208,136,American,East,3B,109,292,25,612.5,AE,6.4175489424
+"Kearney, Bob",Seattle,204,49,6,23,25,12,7,1309,308,27,126,132,66,American,West,C,419,46,5,300,AW,5.7037824747
+"Madlock, Bill",Los Angeles,379,106,10,38,60,30,14,6207,1906,146,859,803,571,National,West,3B,72,170,24,850,NW,6.7452363495
+"Meacham, Bobby",New York,161,36,0,19,10,17,4,1053,244,3,156,86,107,American,East,SS,70,149,12,,AE,
+"Melvin, Bob",San Francisco,268,60,5,24,25,15,2,350,78,5,34,29,18,National,West,C,442,59,6,90,NW,4.4998096703
+"Oglivie, Ben",Milwaukee,346,98,5,31,53,30,16,5913,1615,235,784,901,560,American,East,DH,0,0,0,,AE,
+"Roberts, Bip",San Diego,241,61,1,34,12,14,1,241,61,1,34,12,14,National,West,2B,166,172,10,,NW,
+"Robidoux, Billy Jo",Milwaukee,181,41,1,15,21,33,2,232,50,4,20,29,45,American,East,1B,326,29,5,67.5,AE,4.2121275979
+"Russell, Bill",Los Angeles,216,54,0,21,18,15,18,7318,1926,46,796,627,483,National,West,UT,103,84,5,,NW,
+"Sample, Billy",Atlanta,200,57,6,23,14,14,9,2516,684,46,371,230,195,National,West,OF,69,1,1,,NW,
+"Schroeder, Bill",Milwaukee,217,46,7,32,19,9,4,694,160,32,86,76,32,American,East,UT,307,25,1,180,AE,5.1929568509
+"Wynegar, Butch",New York,194,40,7,19,29,30,11,4183,1069,64,486,493,608,American,East,C,325,22,2,,AE,
+"Bando, Chris",Cleveland,254,68,2,28,26,22,6,999,236,21,108,117,118,American,East,C,359,30,4,305,AE,5.7203117766
+"Brown, Chris",San Francisco,416,132,7,57,49,33,3,932,273,24,113,121,80,National,West,3B,73,177,18,215,NW,5.3706380281
+"Castillo, Carmen",Cleveland,205,57,8,34,32,9,5,756,192,32,117,107,51,American,East,OD,58,4,4,247.5,AE,5.511410582
+"Cooper, Cecil",Milwaukee,542,140,12,46,75,41,16,7099,2130,235,987,1089,431,American,East,1B,697,61,9,,AE,
+"Davis, Chili",San Francisco,526,146,13,71,70,84,6,2648,715,77,352,342,289,National,West,RF,303,9,9,815,NW,6.7031881132
+"Fisk, Carlton",Chicago,457,101,14,42,63,22,17,6521,1767,281,1003,977,619,American,West,C,389,39,4,875,AW,6.7742238864
+"Ford, Curt",St Louis,214,53,2,30,29,23,2,226,59,2,32,32,27,National,East,OF,109,7,3,70,NE,4.248495242
+"Johnson, Cliff",Toronto,336,84,15,48,55,52,15,3945,1016,196,539,699,568,American,East,DH,8,1,0,,AE,
+"Lansford, Carney",Oakland,591,168,19,80,72,39,9,4478,1307,113,634,563,319,American,West,3B,67,147,4,1200,AW,7.0900768358
+"Lemon, Chet",Detroit,403,101,12,45,53,39,12,5150,1429,166,747,666,526,American,East,CF,316,6,5,675,AE,6.5147126909
+"Maldonado, Candy",San Francisco,405,102,18,49,85,20,6,950,231,29,99,138,64,National,West,OF,161,10,3,415,NW,6.0282785202
+"Martinez, Carmelo",San Diego,244,58,9,28,25,35,4,1335,333,49,164,179,194,National,West,O1,142,14,2,340,NW,5.8289456176
+"Moore, Charlie",Milwaukee,235,61,3,24,39,21,14,3926,1029,35,441,401,333,American,East,C,425,43,4,,AE,
+"Reynolds, Craig",Houston,313,78,6,32,41,12,12,3742,968,35,409,321,170,National,West,SS,106,206,7,416.667,NW,6.0322873416
+"Ripken, Cal",Baltimore,627,177,25,98,81,70,6,3210,927,133,529,472,313,American,East,SS,240,482,13,1350,AE,7.2078598714
+"Snyder, Cory",Cleveland,416,113,24,58,69,16,1,416,113,24,58,69,16,American,East,OS,203,70,10,90,AE,4.4998096703
+"Speier, Chris",Chicago,155,44,6,21,23,15,16,6631,1634,98,698,661,777,National,East,3S,53,88,3,275,NE,5.6167710977
+"Wilkerson, Curt",Texas,236,56,0,27,15,11,4,1115,270,1,116,64,57,American,West,2S,125,199,13,230,AW,5.4380793089
+"Anderson, Dave",Los Angeles,216,53,1,31,15,22,4,926,210,9,118,69,114,National,West,3S,73,152,11,225,NW,5.4161004022
+"Baker, Dusty",Oakland,242,58,4,25,19,27,19,7117,1981,242,964,1013,762,American,West,OF,90,4,0,,AW,
+"Baylor, Don",Boston,585,139,31,93,94,62,17,7546,1982,315,1141,1179,727,American,East,DH,0,0,0,950,AE,6.8564619846
+"Bilardello, Dann",Montreal,191,37,4,12,17,14,4,773,163,16,61,74,52,National,East,C,391,38,8,,NE,
+"Boston, Daryl",Chicago,199,53,5,29,22,21,3,514,120,8,57,40,39,American,West,CF,152,3,5,75,AW,4.3174881135
+"Coles, Darnell",Detroit,521,142,20,67,86,45,4,815,205,22,99,103,78,American,East,3B,107,242,23,105,AE,4.6539603502
+"Collins, Dave",Detroit,419,113,1,44,27,44,12,4484,1231,32,612,344,422,American,East,LF,211,2,1,,AE,
+"Concepcion, Dave",Cincinnati,311,81,3,42,30,26,17,8247,2198,100,950,909,690,National,West,UT,153,223,10,320,NW,5.7683209958
+"Daulton, Darren",Philadelphia,138,31,8,18,21,38,3,244,53,12,33,32,55,National,East,C,244,21,4,,NE,
+"DeCinces, Doug",California,512,131,26,69,96,52,14,5347,1397,221,712,815,548,American,West,3B,119,216,12,850,AW,6.7452363495
+"Evans, Darrell",Detroit,507,122,29,78,85,91,18,7761,1947,347,1175,1152,1380,American,East,1B,808,108,2,535,AE,6.2822667469
+"Evans, Dwight",Boston,529,137,26,86,97,97,15,6661,1785,291,1082,949,989,American,East,RF,280,10,5,933.333,AE,6.8387620504
+"Garcia, Damaso",Toronto,424,119,6,57,46,13,9,3651,1046,32,461,301,112,American,East,2B,224,286,8,850,AE,6.7452363495
+"Gladden, Dan",San Francisco,351,97,4,55,29,39,4,1258,353,16,196,110,117,National,West,CF,226,7,3,210,NW,5.3471075307
+"Heep, Danny",New York,195,55,5,24,33,30,8,1313,338,25,144,149,153,National,East,OF,83,2,1,,NE,
+"Henderson, Dave",Seattle,388,103,15,59,47,39,6,2174,555,80,285,274,186,American,West,OF,182,9,4,325,AW,5.7838251823
+"Hill, Donnie",Oakland,339,96,4,37,29,23,4,1064,290,11,123,108,55,American,West,23,104,213,9,275,AW,5.6167710977
+"Kingman, Dave",Oakland,561,118,35,70,94,33,16,6677,1575,442,901,1210,608,American,West,DH,463,32,8,,AW,
+"Lopes, Davey",Chicago,255,70,7,49,35,43,15,6311,1661,154,1019,608,820,National,East,3O,51,54,8,450,NE,6.1092475828
+"Mattingly, Don",New York,677,238,31,117,113,53,5,2223,737,93,349,401,171,American,East,1B,1377,100,6,1975,AE,7.5883236773
+"Motley, Darryl",Kansas City,227,46,7,23,20,12,5,1325,324,44,156,158,67,American,West,RF,92,2,2,,AW,
+"Murphy, Dale",Atlanta,614,163,29,89,83,75,11,5017,1388,266,813,822,617,National,West,CF,303,6,6,1900,NW,7.5496091652
+"Murphy, Dwayne",Oakland,329,83,9,50,39,56,9,3828,948,145,575,528,635,American,West,CF,276,6,2,600,AW,6.3969296552
+"Parker, Dave",Cincinnati,637,174,31,89,116,56,14,6727,2024,247,978,1093,495,National,West,RF,278,9,9,1041.667,NW,6.9485775935
+"Pasqua, Dan",New York,280,82,16,44,45,47,2,428,113,25,61,70,63,American,East,LF,148,4,2,110,AE,4.7004803658
+"Porter, Darrell",Texas,155,41,12,21,29,22,16,5409,1338,181,746,805,875,American,West,CD,165,9,1,260,AW,5.560681631
+"Schofield, Dick",California,458,114,13,67,57,48,4,1350,298,28,160,123,122,American,West,SS,246,389,18,475,AW,6.163314804
+"Slaught, Don",Texas,314,83,13,39,46,16,5,1457,405,28,156,159,76,American,West,C,533,40,4,431.5,AW,6.0672675105
+"Strawberry, Darryl",New York,475,123,27,76,93,72,4,1810,471,108,292,343,267,National,East,RF,226,10,6,1220,NE,7.1066061377
+"Sveum, Dale",Milwaukee,317,78,7,35,35,32,1,317,78,7,35,35,32,American,East,3B,45,122,26,70,AE,4.248495242
+"Tartabull, Danny",Seattle,511,138,25,76,96,61,3,592,164,28,87,110,71,American,West,RF,157,7,8,145,AW,4.9767337424
+"Thon, Dickie",Houston,278,69,3,24,21,29,8,2079,565,32,258,192,162,National,West,SS,142,210,10,,NW,
+"Walling, Denny",Houston,382,119,13,54,58,36,12,2133,594,41,287,294,227,National,West,3B,59,156,9,595,NW,6.3885614055
+"Winfield, Dave",New York,565,148,24,90,104,77,14,7287,2083,305,1135,1234,791,American,East,RF,292,9,5,1861.46,AE,7.529116405
+"Cabell, Enos",Los Angeles,277,71,2,27,29,14,15,5952,1647,60,753,596,259,National,West,1B,360,32,5,,NW,
+"Davis, Eric",Cincinnati,415,115,27,97,71,68,3,711,184,45,156,119,99,National,West,LF,274,2,7,300,NW,5.7037824747
+"Milner, Eddie",Cincinnati,424,110,15,70,47,36,7,2130,544,38,335,174,258,National,West,CF,292,6,3,490,NW,6.1944053911
+"Murray, Eddie",Baltimore,495,151,17,61,84,78,10,5624,1679,275,884,1015,709,American,East,1B,1045,88,13,2460,AE,7.8079166289
+"Riles, Ernest",Milwaukee,524,132,9,69,47,54,2,972,260,14,123,92,90,American,East,SS,212,327,20,,AE,
+"Romero, Ed",Boston,233,49,2,41,23,18,8,1350,336,7,166,122,106,American,East,SS,102,132,10,375,AE,5.926926026
+"Whitt, Ernie",Toronto,395,106,16,48,56,35,10,2303,571,86,266,323,248,American,East,C,709,41,7,,AE,
+"Lynn, Fred",Baltimore,397,114,23,67,67,53,13,5589,1632,241,906,926,716,American,East,CF,244,2,4,,AE,
+"Rayford, Floyd",Baltimore,210,37,8,15,19,15,6,994,244,36,107,114,53,American,East,3B,40,115,15,,AE,
+"Stubbs, Franklin",Los Angeles,420,95,23,55,58,37,3,646,139,31,77,77,61,National,West,LF,206,10,7,,NW,
+"White, Frank",Kansas City,566,154,22,76,84,43,14,6100,1583,131,743,693,300,American,West,2B,316,439,10,750,AW,6.6200732065
+"Bell, George",Toronto,641,198,31,101,108,41,5,2129,610,92,297,319,117,American,East,LF,269,17,10,1175,AE,7.0690234266
+"Braggs, Glenn",Milwaukee,215,51,4,19,18,11,1,215,51,4,19,18,11,American,East,LF,116,5,12,70,AE,4.248495242
+"Brett, George",Kansas City,441,128,16,70,73,80,14,6675,2095,209,1072,1050,695,American,West,3B,97,218,16,1500,AW,7.3132203871
+"Brock, Greg",Los Angeles,325,76,16,33,52,37,5,1506,351,71,195,219,214,National,West,1B,726,87,3,385,NW,5.9532433343
+"Carter, Gary",New York,490,125,24,81,105,62,13,6063,1646,271,847,999,680,National,East,C,869,62,8,1925.571,NE,7.5629778261
+"Davis, Glenn",Houston,574,152,31,91,101,64,3,985,260,53,148,173,95,National,West,1B,1253,111,11,215,NW,5.3706380281
+"Foster, George",New York,284,64,14,30,42,24,18,7023,1925,348,986,1239,666,National,East,LF,96,4,4,,NE,
+"Gaetti, Gary",Minneapolis,596,171,34,91,108,52,6,2862,728,107,361,401,224,American,West,3B,118,334,21,900,AW,6.8023947633
+"Gagne, Greg",Minneapolis,472,118,12,63,54,30,4,793,187,14,102,80,50,American,West,SS,228,377,26,155,AW,5.0434251169
+"Hendrick, George",California,283,77,14,45,47,26,16,6840,1910,259,915,1067,546,American,West,OF,144,6,5,700,AW,6.551080335
+"Hubbard, Glenn",Atlanta,408,94,4,42,36,66,9,3573,866,59,429,365,410,National,West,2B,282,487,19,535,NW,6.2822667469
+"Iorg, Garth",Toronto,327,85,3,30,44,20,8,2140,568,16,216,208,93,American,East,32,91,185,12,362.5,AE,5.8930244743
+"Matthews, Gary",Chicago,370,96,21,49,46,60,15,6986,1972,231,1070,955,921,National,East,LF,137,5,9,733.333,NE,6.5975998961
+"Nettles, Graig",San Diego,354,77,16,36,55,41,20,8716,2172,384,1172,1267,1057,National,West,3B,83,174,16,200,NW,5.2983173665
+"Pettis, Gary",California,539,139,5,93,58,69,5,1469,369,12,247,126,198,American,West,CF,462,9,7,400,AW,5.9914645471
+"Redus, Gary",Philadelphia,340,84,11,62,33,47,5,1516,376,42,284,141,219,National,East,LF,185,8,4,400,NE,5.9914645471
+"Templeton, Garry",San Diego,510,126,2,42,44,35,11,5562,1578,44,703,519,256,National,West,SS,207,358,20,737.5,NW,6.6032660882
+"Thomas, Gorman",Seattle,315,59,16,45,36,58,13,4677,1051,268,681,782,697,American,West,DH,0,0,0,,AW,
+"Walker, Greg",Chicago,282,78,13,37,51,29,5,1649,453,73,211,280,138,American,West,1B,670,57,5,500,AW,6.2146080984
+"Ward, Gary",Texas,380,120,5,54,51,31,8,3118,900,92,444,419,240,American,West,LF,237,8,1,600,AW,6.3969296552
+"Wilson, Glenn",Philadelphia,584,158,15,70,84,42,5,2358,636,58,265,316,134,National,East,RF,331,20,4,662.5,NE,6.4960205579
+"Baines, Harold",Chicago,570,169,21,72,88,38,7,3754,1077,140,492,589,263,American,West,RF,295,15,5,950,AW,6.8564619846
+"Brooks, Hubie",Montreal,306,104,14,50,58,25,7,2954,822,55,313,377,187,National,East,SS,116,222,15,750,NE,6.6200732065
+"Johnson, Howard",New York,220,54,10,30,39,31,5,1185,299,40,145,154,128,National,East,3S,50,136,20,297.5,NE,5.695414225
+"McRae, Hal",Kansas City,278,70,7,22,37,18,18,7186,2081,190,935,1088,643,American,West,DH,0,0,0,325,AW,5.7838251823
+"Reynolds, Harold",Seattle,445,99,1,46,24,29,4,618,129,1,72,31,48,American,West,2B,278,415,16,87.5,AW,4.4716387934
+"Spilman, Harry",San Francisco,143,39,5,18,30,15,9,639,151,16,80,97,61,National,West,1B,138,15,1,175,NW,5.1647859739
+"Winningham, Herm",Montreal,185,40,4,23,11,18,3,524,125,7,58,37,47,National,East,OF,97,2,2,90,NE,4.4998096703
+"Barfield, Jesse",Toronto,589,170,40,107,108,69,6,2325,634,128,371,376,238,American,East,RF,368,20,3,1237.5,AE,7.1208484944
+"Beniquez, Juan",Baltimore,343,103,6,48,36,40,15,4338,1193,70,581,421,325,American,East,UT,211,56,13,430,AE,6.0637852087
+"Bonilla, Juan",Baltimore,284,69,1,33,18,25,5,1407,361,6,139,98,111,American,East,2B,122,140,5,,AE,
+"Cangelosi, John",Chicago,438,103,2,65,32,71,2,440,103,2,67,32,71,American,West,LF,276,7,9,100,AW,4.605170186
+"Canseco, Jose",Oakland,600,144,33,85,117,65,2,696,173,38,101,130,69,American,West,LF,319,4,14,165,AW,5.1059454739
+"Carter, Joe",Cleveland,663,200,29,108,121,32,4,1447,404,57,210,222,68,American,East,RF,241,8,6,250,AE,5.5214609179
+"Clark, Jack",St Louis,232,55,9,34,23,45,12,4405,1213,194,702,705,625,National,East,1B,623,35,3,1300,NE,7.1701195434
+"Cruz, Jose",Houston,479,133,10,48,72,55,17,7472,2147,153,980,1032,854,National,West,LF,237,5,4,773.333,NW,6.650709745
+"Cruz, Julio",Chicago,209,45,0,38,19,42,10,3859,916,23,557,279,478,American,West,2B,132,205,5,,AW,
+"Davis, Jody",Chicago,528,132,21,61,74,41,6,2641,671,97,273,383,226,National,East,C,885,105,8,1008.333,NE,6.9160537512
+"Dwyer, Jim",Baltimore,160,39,8,18,31,22,14,2128,543,56,304,268,298,American,East,DO,33,3,0,275,AE,5.6167710977
+"Franco, Julio",Cleveland,599,183,10,80,74,32,5,2482,715,27,330,326,158,American,East,SS,231,374,18,775,AE,6.6528630294
+"Gantner, Jim",Milwaukee,497,136,7,58,38,26,11,3871,1066,40,450,367,241,American,East,2B,304,347,10,850,AE,6.7452363495
+"Grubb, Johnny",Detroit,210,70,13,32,51,28,15,4040,1130,97,544,462,551,American,East,DH,0,0,0,365,AE,5.8998973536
+"Hairston, Jerry",Chicago,225,61,5,32,26,26,11,1568,408,25,202,185,257,American,West,UT,132,9,0,,AW,
+"Howell, Jack",California,151,41,4,26,21,19,2,288,68,9,45,39,35,American,West,3B,28,56,2,95,AW,4.5538768916
+"Kruk, John",San Diego,278,86,4,33,38,45,1,278,86,4,33,38,45,National,West,LF,102,4,2,110,NW,4.7004803658
+"Leonard, Jeffrey",San Francisco,341,95,6,48,42,20,10,2964,808,81,379,428,221,National,West,LF,158,4,5,100,NW,4.605170186
+"Morrison, Jim",Pittsburgh,537,147,23,58,88,47,10,2744,730,97,302,351,174,National,East,3B,92,257,20,277.5,NE,5.6258209332
+"Moses, John",Seattle,399,102,3,56,34,34,5,670,167,4,89,48,54,American,West,CF,211,9,3,80,AW,4.3820266347
+"Mumphrey, Jerry",Chicago,309,94,5,37,32,26,13,4618,1330,57,616,522,436,National,East,OF,161,3,3,600,NE,6.3969296552
+"Orsulak, Joe",Pittsburgh,401,100,2,60,19,28,4,876,238,2,126,44,55,National,East,RF,193,11,4,,NE,
+"Orta, Jorge",Kansas City,336,93,9,35,46,23,15,5779,1610,128,730,741,497,American,West,DH,0,0,0,,AW,
+"Presley, Jim",Seattle,616,163,27,83,107,32,3,1437,377,65,181,227,82,American,West,3B,110,308,15,200,AW,5.2983173665
+"Quirk, Jamie",Kansas City,219,47,8,24,26,17,12,1188,286,23,100,125,63,American,West,CS,260,58,4,,AW,
+"Ray, Johnny",Pittsburgh,579,174,7,67,78,58,6,3053,880,32,366,337,218,National,East,2B,280,479,5,657,NE,6.4876840185
+"Reed, Jeff",Minneapolis,165,39,2,13,9,16,3,196,44,2,18,10,18,American,West,C,332,19,2,75,AW,4.3174881135
+"Rice, Jim",Boston,618,200,20,98,110,62,13,7127,2163,351,1104,1289,564,American,East,LF,330,16,8,2412.5,AE,7.7884188332
+"Royster, Jerry",San Diego,257,66,5,31,26,32,14,3910,979,33,518,324,382,National,West,UT,87,166,14,250,NW,5.5214609179
+"Russell, John",Philadelphia,315,76,13,35,60,25,3,630,151,24,68,94,55,National,East,C,498,39,13,155,NE,5.0434251169
+"Samuel, Juan",Philadelphia,591,157,16,90,78,26,4,2020,541,52,310,226,91,National,East,2B,290,440,25,640,NE,6.4614681764
+"Shelby, John",Baltimore,404,92,11,54,49,18,6,1354,325,30,188,135,63,American,East,OF,222,5,5,300,AE,5.7037824747
+"Skinner, Joel",Chicago,315,73,5,23,37,16,4,450,108,6,38,46,28,American,West,C,227,15,3,110,AW,4.7004803658
+"Stone, Jeff",Philadelphia,249,69,6,32,19,20,4,702,209,10,97,48,44,National,East,OF,103,8,2,,NE,
+"Sundberg, Jim",Kansas City,429,91,12,41,42,57,13,5590,1397,83,578,579,644,American,West,C,686,46,4,825,AW,6.7153833863
+"Traber, Jim",Baltimore,212,54,13,28,44,18,2,233,59,13,31,46,20,American,East,UT,243,23,5,,AE,
+"Uribe, Jose",San Francisco,453,101,3,46,43,61,3,948,218,6,96,72,91,National,West,SS,249,444,16,195,NW,5.2729995586
+"Willard, Jerry",Oakland,161,43,4,17,26,22,3,707,179,21,77,99,76,American,West,C,300,12,2,,AW,
+"Youngblood, Joel",San Francisco,184,47,5,20,28,18,11,3327,890,74,419,382,304,National,West,OF,49,2,0,450,NW,6.1092475828
+"Bass, Kevin",Houston,591,184,20,83,79,38,5,1689,462,40,219,195,82,National,West,RF,303,12,5,630,NW,6.4457198194
+"Daniels, Kal",Cincinnati,181,58,6,34,23,22,1,181,58,6,34,23,22,National,West,OF,88,0,3,86.5,NW,4.4601444139
+"Gibson, Kirk",Detroit,441,118,28,84,86,68,8,2723,750,126,433,420,309,American,East,RF,190,2,2,1300,AE,7.1701195434
+"Griffey, Ken",New York,490,150,21,69,58,35,14,6126,1839,121,983,707,600,American,East,OF,96,5,3,1000,AE,6.907755279
+"Hernandez, Keith",New York,551,171,13,94,83,94,13,6090,1840,128,969,900,917,National,East,1B,1199,149,5,1800,NE,7.4955419439
+"Hrbek, Kent",Minneapolis,550,147,29,85,91,71,6,2816,815,117,405,474,319,American,West,1B,1218,104,10,1310,AW,7.1777824162
+"Landreaux, Ken",Los Angeles,283,74,4,34,29,22,10,3919,1062,85,505,456,283,National,West,OF,145,5,7,737.5,NW,6.6032660882
+"McReynolds, Kevin",San Diego,560,161,26,89,96,66,4,1789,470,65,233,260,155,National,West,CF,332,9,8,625,NW,6.4377516497
+"Mitchell, Kevin",New York,328,91,12,51,43,33,2,342,94,12,51,44,33,National,East,OS,145,59,8,125,NE,4.8283137373
+"Moreland, Keith",Chicago,586,159,12,72,79,53,9,3082,880,83,363,477,295,National,East,RF,181,13,4,1043.333,NE,6.9501756754
+"Oberkfell, Ken",Atlanta,503,136,5,62,48,83,10,3423,970,20,408,303,414,National,West,3B,65,258,8,725,NW,6.5861716549
+"Phelps, Ken",Seattle,344,85,24,69,64,88,7,911,214,64,150,156,187,American,West,DH,0,0,0,300,AW,5.7037824747
+"Puckett, Kirby",Minneapolis,680,223,31,119,96,34,3,1928,587,35,262,201,91,American,West,CF,429,8,6,365,AW,5.8998973536
+"Stillwell, Kurt",Cincinnati,279,64,0,31,26,30,1,279,64,0,31,26,30,National,West,SS,107,205,16,75,NW,4.3174881135
+"Durham, Leon",Chicago,484,127,20,66,65,67,7,3006,844,116,436,458,377,National,East,1B,1231,80,7,1183.333,NE,7.0760903121
+"Dykstra, Len",New York,431,127,8,77,45,58,2,667,187,9,117,64,88,National,East,CF,283,8,3,202.5,NE,5.3107398865
+"Herndon, Larry",Detroit,283,70,8,33,37,27,12,4479,1222,94,557,483,307,American,East,OF,156,2,2,225,AE,5.4161004022
+"Lacy, Lee",Baltimore,491,141,11,77,47,37,15,4291,1240,84,615,430,340,American,East,RF,239,8,2,525,AE,6.2633982626
+"Matuszek, Len",Los Angeles,199,52,9,26,28,21,6,805,191,30,113,119,87,National,West,O1,235,22,5,265,NW,5.579729826
+"Moseby, Lloyd",Toronto,589,149,21,89,86,64,7,3558,928,102,513,471,351,American,East,CF,371,6,6,787.5,AE,6.6688633707
+"Parrish, Lance",Detroit,327,84,22,53,62,38,10,4273,1123,212,577,700,334,American,East,C,483,48,6,800,AE,6.6846117277
+"Parrish, Larry",Texas,464,128,28,67,94,52,13,5829,1552,210,740,840,452,American,West,DH,0,0,0,587.5,AW,6.375876246
+"Rivera, Luis",Montreal,166,34,0,20,13,17,1,166,34,0,20,13,17,National,East,SS,64,119,9,,NE,
+"Sheets, Larry",Baltimore,338,92,18,42,60,21,3,682,185,36,88,112,50,American,East,DH,0,0,0,145,AE,4.9767337424
+"Smith, Lonnie",Kansas City,508,146,8,80,44,46,9,3148,915,41,571,289,326,American,West,LF,245,5,9,,AW,
+"Whitaker, Lou",Detroit,584,157,20,95,73,63,10,4704,1320,93,724,522,576,American,East,2B,276,421,11,420,AE,6.0402547113
+"Aldrete, Mike",San Francisco,216,54,2,27,25,33,1,216,54,2,27,25,33,National,West,1O,317,36,1,75,NW,4.3174881135
+"Barrett, Marty",Boston,625,179,4,94,60,65,5,1696,476,12,216,163,166,American,East,2B,303,450,14,575,AE,6.3543700408
+"Brown, Mike",Pittsburgh,243,53,4,18,26,27,4,853,228,23,101,110,76,National,East,OF,107,3,3,,NE,
+"Davis, Mike",Oakland,489,131,19,77,55,34,7,2051,549,62,300,263,153,American,West,RF,310,9,9,780,AW,6.6592939197
+"Diaz, Mike",Pittsburgh,209,56,12,22,36,19,2,216,58,12,24,37,19,National,East,O1,201,6,3,90,NE,4.4998096703
+"Duncan, Mariano",Los Angeles,407,93,8,47,30,30,2,969,230,14,121,69,68,National,West,SS,172,317,25,150,NW,5.0106352941
+"Easler, Mike",New York,490,148,14,64,78,49,13,3400,1000,113,445,491,301,American,East,DH,0,0,0,700,AE,6.551080335
+"Fitzgerald, Mike",Montreal,209,59,6,20,37,27,4,884,209,14,66,106,92,National,East,C,415,35,3,,NE,
+"Hall, Mel",Cleveland,442,131,18,68,77,33,6,1416,398,47,210,203,136,American,East,LF,233,7,7,550,AE,6.3099182782
+"Hatcher, Mickey",Minneapolis,317,88,3,40,32,19,8,2543,715,28,269,270,118,American,West,UT,220,16,4,,AW,
+"Heath, Mike",St Louis,288,65,8,30,36,27,9,2815,698,55,315,325,189,National,East,C,259,30,10,650,NE,6.4769723629
+"Kingery, Mike",Kansas City,209,54,3,25,14,12,1,209,54,3,25,14,12,American,West,OF,102,6,3,68,AW,4.2195077052
+"LaValliere, Mike",St Louis,303,71,3,18,30,36,3,344,76,3,20,36,45,National,East,C,468,47,6,100,NE,4.605170186
+"Marshall, Mike",Los Angeles,330,77,19,47,53,27,6,1928,516,90,247,288,161,National,West,RF,149,8,6,670,NW,6.5072777124
+"Pagliarulo, Mike",New York,504,120,28,71,71,54,3,1085,259,54,150,167,114,American,East,3B,103,283,19,175,AE,5.1647859739
+"Salas, Mark",Minneapolis,258,60,8,28,33,18,3,638,170,17,80,75,36,American,West,C,358,32,8,137,AW,4.9199809258
+"Schmidt, Mike",Philadelphia,552,160,37,97,119,89,15,7292,1954,495,1347,1392,1354,National,East,3B,78,220,6,2127.333,NE,7.6626243615
+"Scioscia, Mike",Los Angeles,374,94,5,36,26,62,7,1968,519,26,181,199,288,National,West,C,756,64,15,875,NW,6.7742238864
+"Tettleton, Mickey",Oakland,211,43,10,26,35,39,3,498,116,14,59,55,78,American,West,C,463,32,8,120,AW,4.7874917428
+"Thompson, Milt",Philadelphia,299,75,6,38,23,26,3,580,160,8,71,33,44,National,East,CF,212,1,2,140,NE,4.9416424226
+"Webster, Mitch",Montreal,576,167,8,89,49,57,4,822,232,19,132,83,79,National,East,CF,325,12,8,210,NE,5.3471075307
+"Wilson, Mookie",New York,381,110,9,61,45,32,7,3015,834,40,451,249,168,National,East,OF,228,7,5,800,NE,6.6846117277
+"Wynne, Marvell",San Diego,288,76,7,34,37,15,4,1644,408,16,198,120,113,National,West,OF,203,3,3,240,NW,5.4806389233
+"Young, Mike",Baltimore,369,93,9,43,42,49,5,1258,323,54,181,177,157,American,East,LF,149,1,6,350,AE,5.8579331545
+"Esasky, Nick",Cincinnati,330,76,12,35,41,47,4,1367,326,55,167,198,167,National,West,1B,512,30,5,,NW,
+"Guillen, Ozzie",Chicago,547,137,2,58,47,12,2,1038,271,3,129,80,24,American,West,SS,261,459,22,175,AW,5.1647859739
+"McDowell, Oddibe",Texas,572,152,18,105,49,65,2,978,249,36,168,91,101,American,West,CF,325,13,3,200,AW,5.2983173665
+"Moreno, Omar",Atlanta,359,84,4,46,27,21,12,4992,1257,37,699,386,387,National,West,RF,151,8,5,,NW,
+"Smith, Ozzie",St Louis,514,144,0,67,54,79,9,4739,1169,13,583,374,528,National,East,SS,229,453,15,1940,NE,7.5704432521
+"Virgil, Ozzie",Atlanta,359,80,15,45,48,63,7,1493,359,61,176,202,175,National,West,C,682,93,13,700,NW,6.551080335
+"Bradley, Phil",Seattle,526,163,12,88,50,77,4,1556,470,38,245,167,174,American,West,LF,250,11,1,750,AW,6.6200732065
+"Garner, Phil",Houston,313,83,9,43,41,30,14,5885,1543,104,751,714,535,National,West,3B,58,141,23,450,NW,6.1092475828
+"Incaviglia, Pete",Texas,540,135,30,82,88,55,1,540,135,30,82,88,55,American,West,RF,157,6,14,172,AW,5.1474944768
+"Molitor, Paul",Milwaukee,437,123,9,62,55,40,9,4139,1203,79,676,390,364,American,East,3B,82,170,15,1260,AE,7.1388669999
+"O'Brien, Pete",Texas,551,160,23,86,90,87,5,2235,602,75,278,328,273,American,West,1B,1224,115,11,,AW,
+"Rose, Pete",Cincinnati,237,52,0,15,25,30,24,14053,4256,160,2165,1314,1566,National,West,1B,523,43,6,750,NW,6.6200732065
+"Sheridan, Pat",Detroit,236,56,6,41,19,21,5,1257,329,24,166,125,105,American,East,OF,172,1,4,190,AE,5.2470240722
+"Tabler, Pat",Cleveland,473,154,6,61,48,29,6,1966,566,29,250,252,178,American,East,1B,846,84,9,580,AE,6.3630281035
+"Belliard, Rafael",Pittsburgh,309,72,0,33,31,26,5,354,82,0,41,32,26,National,East,SS,117,269,12,130,NE,4.8675344505
+"Burleson, Rick",California,271,77,5,35,29,33,12,4933,1358,48,630,435,403,American,West,UT,62,90,3,450,AW,6.1092475828
+"Bush, Randy",Minneapolis,357,96,7,50,45,39,5,1394,344,43,178,192,136,American,West,LF,167,2,4,300,AW,5.7037824747
+"Cerone, Rick",Milwaukee,216,56,4,22,18,15,12,2796,665,43,266,304,198,American,East,C,391,44,4,250,AE,5.5214609179
+"Cey, Ron",Chicago,256,70,13,42,36,44,16,7058,1845,312,965,1128,990,National,East,3B,41,118,8,1050,NE,6.9565454432
+"Deer, Rob",Milwaukee,466,108,33,75,86,72,3,652,142,44,102,109,102,American,East,RF,286,8,8,215,AE,5.3706380281
+"Dempsey, Rick",Baltimore,327,68,13,42,29,45,18,3949,939,78,438,380,466,American,East,C,659,53,7,400,AE,5.9914645471
+"Gedman, Rich",Boston,462,119,16,49,65,37,7,2131,583,69,244,288,150,American,East,C,866,65,6,,AE,
+"Hassey, Ron",New York,341,110,9,45,49,46,9,2331,658,50,249,322,274,American,East,C,251,9,4,560,AE,6.3279367837
+"Henderson, Rickey",New York,608,160,28,130,74,89,8,4071,1182,103,862,417,708,American,East,CF,426,4,6,1670,AE,7.4205789054
+"Jackson, Reggie",California,419,101,18,65,58,92,20,9528,2510,548,1509,1659,1342,American,West,DH,0,0,0,487.5,AW,6.1892902904
+"Jones, Ruppert",California,393,90,17,73,49,64,11,4223,1056,139,618,551,514,American,West,RF,205,5,4,,AW,
+"Kittle, Ron",Chicago,376,82,21,42,60,35,5,1770,408,115,238,299,157,American,West,DH,0,0,0,425,AW,6.0520891689
+"Knight, Ray",New York,486,145,11,51,76,40,11,3967,1102,67,410,497,284,National,East,3B,88,204,16,500,NE,6.2146080984
+"Kutcher, Randy",San Francisco,186,44,7,28,16,11,1,186,44,7,28,16,11,National,West,OF,99,3,1,,NW,
+"Law, Rudy",Kansas City,307,80,1,42,36,29,7,2421,656,18,379,198,184,American,West,OF,145,2,2,,AW,
+"Leach, Rick",Toronto,246,76,5,35,39,13,6,912,234,12,102,96,80,American,East,DO,44,0,1,250,AE,5.5214609179
+"Manning, Rick",Milwaukee,205,52,8,31,27,17,12,5134,1323,56,643,445,459,American,East,OF,155,3,2,400,AE,5.9914645471
+"Mulliniks, Rance",Toronto,348,90,11,50,45,43,10,2288,614,43,295,273,269,American,East,3B,60,176,6,450,AE,6.1092475828
+"Oester, Ron",Cincinnati,523,135,8,52,44,52,9,3368,895,39,377,284,296,National,West,2B,367,475,19,750,NW,6.6200732065
+"Quinones, Rey",Boston,312,68,2,32,22,24,1,312,68,2,32,22,24,American,East,SS,86,150,15,70,AE,4.248495242
+"Ramirez, Rafael",Atlanta,496,119,8,57,33,21,7,3358,882,36,365,280,165,National,West,S3,155,371,29,875,NW,6.7742238864
+"Reynolds, R.J.",Pittsburgh,402,108,9,63,48,40,4,1034,278,16,135,125,79,National,East,LF,190,2,9,190,NE,5.2470240722
+"Roenicke, Ron",Philadelphia,275,68,5,42,42,61,6,961,238,16,128,104,172,National,East,OF,181,3,2,191,NE,5.252273428
+"Sandberg, Ryne",Chicago,627,178,14,68,76,46,6,3146,902,74,494,345,242,National,East,2B,309,492,5,740,NE,6.6066501862
+"Santana, Rafael",New York,394,86,1,38,28,36,4,1089,267,3,94,71,76,National,East,SS,203,369,16,250,NE,5.5214609179
+"Schu, Rick",Philadelphia,208,57,8,32,25,18,3,653,170,17,98,54,62,National,East,3B,42,94,13,140,NE,4.9416424226
+"Sierra, Ruben",Texas,382,101,16,50,55,22,1,382,101,16,50,55,22,American,West,OF,200,7,6,97.5,AW,4.579852378
+"Smalley, Roy",Minneapolis,459,113,20,59,57,68,12,5348,1369,155,713,660,735,American,West,DH,0,0,0,740,AW,6.6066501862
+"Thompson, Robby",San Francisco,549,149,7,73,47,42,1,549,149,7,73,47,42,National,West,2B,255,450,17,140,NW,4.9416424226
+"Wilfong, Rob",California,288,63,3,25,33,16,10,2682,667,38,315,259,204,American,West,2B,135,257,7,341.667,AW,5.8338365785
+"Williams, Reggie",Los Angeles,303,84,4,35,32,23,2,312,87,4,39,32,23,National,West,CF,179,5,3,,NW,
+"Yount, Robin",Milwaukee,522,163,9,82,46,62,13,7037,2019,153,1043,827,535,American,East,CF,352,9,1,1000,AE,6.907755279
+"Balboni, Steve",Kansas City,512,117,29,54,88,43,6,1750,412,100,204,276,155,American,West,1B,1236,98,18,100,AW,4.605170186
+"Bradley, Scott",Seattle,220,66,5,20,28,13,3,290,80,5,27,31,15,American,West,C,281,21,3,90,AW,4.4998096703
+"Bream, Sid",Pittsburgh,522,140,16,73,77,60,4,730,185,22,93,106,86,National,East,1B,1320,166,17,200,NE,5.2983173665
+"Buechele, Steve",Texas,461,112,18,54,54,35,2,680,160,24,76,75,49,American,West,3B,111,226,11,135,AW,4.9052747784
+"Dunston, Shawon",Chicago,581,145,17,66,68,21,2,831,210,21,106,86,40,National,East,SS,320,465,32,155,NE,5.0434251169
+"Fletcher, Scott",Texas,530,159,3,82,50,47,6,1619,426,11,218,149,163,American,West,SS,196,354,15,475,AW,6.163314804
+"Garvey, Steve",San Diego,557,142,21,58,81,23,18,8759,2583,271,1138,1299,478,National,West,1B,1160,53,7,1450,NW,7.2793188354
+"Jeltz, Steve",Philadelphia,439,96,0,44,36,65,4,711,148,1,68,56,99,National,East,SS,229,406,22,150,NE,5.0106352941
+"Lombardozzi, Steve",Minneapolis,453,103,8,53,33,52,2,507,123,8,63,39,58,American,West,2B,289,407,6,105,AW,4.6539603502
+"Owen, Spike",Seattle,528,122,1,67,45,51,4,1716,403,12,211,146,155,American,West,SS,209,372,17,350,AW,5.8579331545
+"Sax, Steve",Los Angeles,633,210,6,91,56,59,6,3070,872,19,420,230,274,National,West,2B,367,432,16,90,NW,4.4998096703
+"Armas, Tony",Boston,425,112,11,40,58,24,11,4513,1134,224,542,727,230,American,East,CF,247,4,8,,AE,
+"Bernazard, Tony",Cleveland,562,169,17,88,73,53,8,3181,841,61,450,342,373,American,East,2B,351,442,17,530,AE,6.2728770065
+"Brookens, Tom",Detroit,281,76,3,42,25,20,8,2658,657,48,324,300,179,American,East,UT,106,144,7,341.667,AE,5.8338365785
+"Brunansky, Tom",Minneapolis,593,152,23,69,75,53,6,2765,686,133,369,384,321,American,West,RF,315,10,6,940,AW,6.8458798753
+"Fernandez, Tony",Toronto,687,213,10,91,65,27,4,1518,448,15,196,137,89,American,East,SS,294,445,13,350,AE,5.8579331545
+"Flannery, Tim",San Diego,368,103,3,48,28,54,8,1897,493,9,207,162,198,National,West,2B,209,246,3,326.667,NW,5.7889413034
+"Foley, Tom",Montreal,263,70,1,26,23,30,4,888,220,9,83,82,86,National,East,UT,81,147,4,250,NE,5.5214609179
+"Gwynn, Tony",San Diego,642,211,14,107,59,52,5,2364,770,27,352,230,193,National,West,RF,337,19,4,740,NW,6.6066501862
+"Harper, Terry",Atlanta,265,68,8,26,30,29,7,1337,339,32,135,163,128,National,West,OF,92,5,3,425,NW,6.0520891689
+"Harrah, Toby",Texas,289,63,7,36,41,44,17,7402,1954,195,1115,919,1153,American,West,2B,166,211,7,,AW,
+"Herr, Tommy",St Louis,559,141,2,48,61,73,8,3162,874,16,421,349,359,National,East,2B,352,414,9,925,NE,6.8297937375
+"Hulett, Tim",Chicago,520,120,17,53,44,21,4,927,227,22,106,80,52,American,West,3B,70,144,11,185,AW,5.2203558251
+"Kennedy, Terry",San Diego,432,114,12,46,57,37,9,3373,916,82,347,477,238,National,West,C,692,70,8,920,NW,6.82437367
+"Landrum, Tito",St Louis,205,43,2,24,17,20,7,854,219,12,105,99,71,National,East,OF,131,6,1,286.667,NE,5.6583212634
+"Laudner, Tim",Minneapolis,193,47,10,21,29,24,6,1136,256,42,129,139,106,American,West,C,299,13,5,245,AW,5.5012582105
+"O'Malley, Tom",Baltimore,181,46,1,19,18,17,5,937,238,9,88,95,104,American,East,3B,37,98,9,,AE,
+"Paciorek, Tom",Texas,213,61,4,17,22,3,17,4061,1145,83,488,491,244,American,West,UT,178,45,4,235,AW,5.4595855141
+"Pena, Tony",Pittsburgh,510,147,10,56,52,53,7,2872,821,63,307,340,174,National,East,C,810,99,18,1150,NE,7.0475172214
+"Pendleton, Terry",St Louis,578,138,1,56,59,34,3,1399,357,7,149,161,87,National,East,3B,133,371,20,160,NE,5.0751738152
+"Perez, Tony",Cincinnati,200,51,2,14,29,25,23,9778,2732,379,1272,1652,925,National,West,1B,398,29,7,,NW,
+"Phillips, Tony",Oakland,441,113,5,76,52,76,5,1546,397,17,226,149,191,American,West,2B,160,290,11,425,AW,6.0520891689
+"Puhl, Terry",Houston,172,42,3,17,14,15,10,4086,1150,57,579,363,406,National,West,OF,65,0,0,900,NW,6.8023947633
+"Raines, Tim",Montreal,580,194,9,91,62,78,8,3372,1028,48,604,314,469,National,East,LF,270,13,6,,NE,
+"Simmons, Ted",Atlanta,127,32,4,14,25,12,19,8396,2402,242,1048,1348,819,National,West,UT,167,18,6,500,NW,6.2146080984
+"Teufel, Tim",New York,279,69,4,35,31,32,4,1359,355,31,180,148,158,National,East,2B,133,173,9,277.5,NE,5.6258209332
+"Wallach, Tim",Montreal,480,112,18,50,71,44,7,3031,771,110,338,406,239,National,East,3B,94,270,16,750,NE,6.6200732065
+"Coleman, Vince",St Louis,600,139,0,94,29,60,2,1236,309,1,201,69,110,National,East,LF,300,12,9,160,NE,5.0751738152
+"Hayes, Von",Philadelphia,610,186,19,107,98,74,6,2728,753,69,399,366,286,National,East,1B,1182,96,13,1300,NE,7.1701195434
+"Law, Vance",Montreal,360,81,5,37,44,37,7,2268,566,41,279,257,246,National,East,2B,170,284,3,525,NE,6.2633982626
+"Backman, Wally",New York,387,124,1,67,27,36,7,1775,506,6,272,125,194,National,East,2B,186,290,17,550,NE,6.3099182782
+"Boggs, Wade",Boston,580,207,8,107,71,105,5,2778,978,32,474,322,417,American,East,3B,121,267,19,1600,AE,7.3777589082
+"Clark, Will",San Francisco,408,117,11,66,41,34,1,408,117,11,66,41,34,National,West,1B,942,72,11,120,NW,4.7874917428
+"Joyner, Wally",California,593,172,22,82,100,57,1,593,172,22,82,100,57,American,West,1B,1222,139,15,165,AW,5.1059454739
+"Krenchicki, Wayne",Montreal,221,53,2,21,23,22,8,1063,283,15,107,124,106,National,East,13,325,58,6,,NE,
+"McGee, Willie",St Louis,497,127,7,65,48,37,5,2703,806,32,379,311,138,National,East,CF,325,9,3,700,NE,6.551080335
+"Randolph, Willie",New York,492,136,5,76,50,94,12,5511,1511,39,897,451,875,American,East,2B,313,381,20,875,AE,6.7742238864
+"Tolleson, Wayne",Chicago,475,126,3,61,43,52,6,1700,433,7,217,93,146,American,West,3B,37,113,7,385,AW,5.9532433343
+"Upshaw, Willie",Toronto,573,144,9,85,60,78,8,3198,857,97,470,420,332,American,East,1B,1314,131,12,960,AE,6.8669332845
+"Wilson, Willie",Kansas City,631,170,9,77,44,31,11,4908,1457,30,775,357,249,American,West,CF,408,4,3,1000,AW,6.907755279
+;;;;
 data certadv.Stock6Mon;
    infile datalines dsd truncover;
    input Stock:$14.
@@ -1081,6 +1409,37 @@ Saudi Arabia,2015,165534.72,181200.02,197245.33,185561.49
 Saudi Arabia,2016,176776.57,197122.69,204289.38,208909.4
 Saudi Arabia,2017,156781.84,191004.14,210605.28,218061.97
 Saudi Arabia,2018,136508.93,116172.14,137075.27,156682.59
+;;;;
+data certadv.avgsales;
+infile datalines dsd truncover;
+input Country:$13. Year AvgSales;
+format AvgSales dollar12.2;
+datalines4;
+United States,2014,301217.14
+United States,2015,192030.99
+United States,2016,191146.66
+United States,2017,117928.00
+United States,2018,160660.73
+Canada,2014,117178.94
+Canada,2015,131935.06
+Canada,2016,136970.24
+Canada,2017,173714.45
+Canada,2018,141331.26
+India,2014,185660.56
+India,2015,300779.41
+India,2016,279505.00
+India,2017,225578.07
+India,2018,261801.51
+China,2014,107031.26
+China,2015,105850.96
+China,2016,135746.41
+China,2017,128389.18
+China,2018,129032.02
+Saudi Arabia,2014,120240.43
+Saudi Arabia,2015,146311.31
+Saudi Arabia,2016,157822.81
+Saudi Arabia,2017,155694.05
+Saudi Arabia,2018,109691.39
 ;;;;
 data certadv.us_goals;
 infile datalines dsd truncover;
@@ -4528,120 +4887,87 @@ datalines;
 1122      FA2       $39,138    04MAY1971    01DEC2007
 1105      ME2       $48,727    04MAR1970    16AUG2018
 ;;;;
-data certadv.monthsum;
-   attrib SaleMon length=$7 label='Sales Month';
-   attrib RevCargo length=8 format=DOLLAR15.2;
-   attrib Rev1st length=8 format=DOLLAR15.2;
-   attrib RevBusiness length=8 format=DOLLAR15.2;
-   attrib RevEcon length=8 format=DOLLAR15.2;
-   attrib MonthNo length=8;
+data certadv.ctcities;
+   input Code $1-3 City $5-22 Name $24-60 Country $61-66;
+   datalines;
+ANC Anchorage, AK      Anchorage International Airport      USA
+BNA Nashville, TN      Nashville International Airport      USA
+CDG Paris              Charles de Gaulle                    France
+LAX Los Angeles, CA    Los Angeles International Airport    USA
+RDU Raleigh-Durham, NC Raleigh-Durham International Airport USA
+;
+data certadv.salcomps;
+   attrib EmpID length=$6;
+   attrib LastName length=$32;
+   attrib Phone length=$8;
+   attrib Location length=$25;
+   attrib Division length=$30;
+   attrib HireDate length=8 format=DATE9.;
+   attrib JobCode length=$6;
+   attrib Salary length=8;
 
    infile datalines dsd;
    input
-      SaleMon
-      RevCargo
-      Rev1st
-      RevBusiness
-      RevEcon
-      MonthNo
+      EmpID
+      LastName
+      Phone
+      Location
+      Division
+      HireDate
+      JobCode
+      Salary
    ;
 datalines4;
-JAN2016,171520869.1,51136353,34897844,169193900,1
-JAN2017,238786807.599999,71197270,48749365,235462316,1
-JAN2018,280350393,83667651,57385822,278553207,1
-FEB2016,177671530.399999,52867177,36397032,175250984,2
-FEB2017,215959695.5,64092727,44111168,212667536,2
-FEB2018,253999924,75811358,51871453,251355652,2
-MAR2016,196591378.2,58562490,40116649,193982585,3
-MAR2017,239056025.55,71173645,48767636,235501953,3
-MAR2018,281433310,83864006,57546222,278491696,3
-APR2016,380804120.200003,113826330,77817068,375598996,4
-APR2017,231609633.7,68910955,47381292,227978686,4
-APR2018,272049319,81059042,55786262,269547946,4
-MAY2016,196261573.201299,58604030,40112475,194336811,5
-MAY2017,238245242.85,71099462,48712345,235727428,5
-MAY2018,280369422,83864513,57572886,278797273,5
-JUN2016,190560828.5,56741721,38819235,187727540,6
-JUN2017,230952368.65,68888876,47285354,228396559,6
-JUN2018,271894927,81059185,55809052,269688978,6
-JUL2016,197163278.201299,58606766,40257451,193861879,7
-JUL2017,239396211.7,71265477,48963239,235369298,7
-JUL2018,280649618,83816720,57513302,278553244,7
-AUG2016,196639501.099999,58583691,40137702,193618096,8
-AUG2017,238629758.201299,71069513,48835260,235620482,8
-AUG2018,281582229,83786273,57497600,277956633,8
-SEP2016,190535012.499999,56702750,38989785,187695144,9
-SEP2017,231186018.35,68862789,47306665,228130158,9
-SEP2018,272253650,81013380,55709005,269787324,9
-OCT2016,196957153.399998,58699076,40198082,194082116,10
-OCT2017,238905712.4,71173722,48730203,235350192,10
-OCT2018,280100981,83811034,57459052,278739086,10
-NOV2016,190228066.7,56626819,38751654,187579685,11
-NOV2017,231314162.65,68892713,47407571,227933862,11
-NOV2018,272428947,81128123,55698892,269158794,11
-DEC2016,196504412.999999,58561897,40418188,194509877,12
-DEC2017,238689980.699999,71261837,48955361,236136735,12
-DEC2018,272149940,81277002,55898552,269719327,12
-;;;;
-data certadv.ReversedNames;
-   input name & $32.;
-   datalines;
-Jones, Fred
-Kavich, Kate
-Turley, Ron
-Dulix, Yolanda
-;;;;
-data certadv.prog1;
-   infile datalines dsd truncover;
-   input FName$1-4 LName$6-12;
-datalines;
-Pete,Henry
-Mary,Johnson
-Alex,Kinsley
-Dori,O'Neil
-;
-data certadv.prog2;
-   infile datalines dsd truncover;
-   input FName $1-5 LName $7-14;
-datalines;
-Clara,Addams
-Pete , Henry
-Dori , O'Neil
-Cindy,Phillips
-Mandi,Young
-;
-data certadv.store1;
-input Wk Sales;
-format Sales dollar8.2;
-datalines;
-1 515.07
-2 772.29
-3 888.88
-4 1000.01
-;;;;
-data certadv.store2;
-input Wk Sales;
-format Sales dollar8.2;
-datalines;
-1 1368.99
-2 1506.23
-3 1200.57
-4 1784.11
-5 43.00
-;;;;
-data certadv.table1;
-input G3 @4 Z $4-5;
-datalines;
-89 FL
-46 UI
-47 BA
-;;;;
-data certadv.table2;
-input G3 @4 R $4-5;
-datalines;
-46 BC
-85 FL
-99 BA
+E00001,MILLS,2380,CARY,FLIGHT OPERATIONS,17758,FLTAT3,25000
+E00002,BOWER,1214,CARY,FINANCE & IT,17753,FINCLK,27000
+E00003,READING,1428,CARY,HUMAN RESOURCES & FACILITIES,17502,VICEPR,120000
+E00004,JUDD,2061,CARY,HUMAN RESOURCES & FACILITIES,17881,FACMNT,42000
+E00006,ANDERSON,1007,CARY,SALES & MARKETING,17939,MKTCLK,31000
+E00007,MASSENGILL,2290,CARY,FLIGHT OPERATIONS,17440,MECH01,29000
+E00008,BADINE,1000,TORONTO,CORPORATE OPERATIONS,17733,OFFMGR,85000
+E00009,DEMENT,1506,CARY,FINANCE & IT,18887,ITPROG,34000
+E00010,FOSKEY,1666,CARY,AIRPORT OPERATIONS,18284,GRCREW,29000
+E00011,POOLE,2594,CARY,FLIGHT OPERATIONS,18270,FLTAT3,27000
+E00012,LEWIS,2207,CARY,SALES & MARKETING,19612,MKTCLK,33000
+E00013,DBAIBO,1002,BOSTON,HUMAN RESOURCES & FACILITIES,18585,RECEPT,22000
+E00014,KEARNEY,2075,CARY,FLIGHT OPERATIONS,18852,MECH02,19000
+E00015,BROWN,1263,CARY,AIRPORT OPERATIONS,18484,GRCSUP,41000
+E00017,SIMPSON,2821,CARY,HUMAN RESOURCES & FACILITIES,18566,RESCLK,36000
+E00018,CROSS,1459,CARY,HUMAN RESOURCES & FACILITIES,19447,FACMNT,33000
+E00020,JOHNSON,1256,CARY,HUMAN RESOURCES & FACILITIES,19710,FACCLK,21000
+E00021,BAKER JR.,1001,HOUSTON,SALES & MARKETING,19152,SALMGR,43000
+E00022,JOHNSON,1255,CARY,HUMAN RESOURCES & FACILITIES,18585,FACCLK,27000
+E00023,FORT,1172,CARY,FLIGHT OPERATIONS,18511,FLTAT2,31000
+E00024,COCKERHAM,1395,CARY,FLIGHT OPERATIONS,18602,FLTAT3,21000
+E00025,BROCKLEBANK,1248,CARY,AIRPORT OPERATIONS,18339,BAGCLK,23000
+E00026,THOMPSON,1516,CARY,FINANCE & IT,19967,ITSUPT,24000
+E00027,BOWMAN,1215,CARY,FINANCE & IT,19998,FINACT,31000
+E00029,MAROON,1325,CARY,AIRPORT OPERATIONS,19540,FLSCHD,17000
+E00030,BREWER,1009,AUSTIN,SALES & MARKETING,19682,MKTCLK,38000
+E00031,GOLDENBERG,1741,CARY,FLIGHT OPERATIONS,18556,PILOT3,28000
+E00032,COUCH,1104,CARY,FINANCE & IT,19781,ITPROG,24000
+E00033,FISHER,1166,CARY,FLIGHT OPERATIONS,19755,FLTAT2,35000
+E00034,TOMPKINS,2997,CARY,FLIGHT OPERATIONS,19980,FLTAT3,28000
+E00035,WEBB,3115,CARY,FINANCE & IT,18647,ITSUPT,26000
+E00038,SMITH,2853,CARY,HUMAN RESOURCES & FACILITIES,19826,FACCLK,20000
+E00039,MCKINNON,1053,TORONTO,HUMAN RESOURCES & FACILITIES,18644,FACCLK,38000
+E00040,WILLIAMS,3157,CARY,FLIGHT OPERATIONS,19735,FLTAT1,32000
+E00041,BRUTON,1008,TORONTO,SALES & MARKETING,19362,MKTCLK,45000
+E00042,ANDERSON,1045,CARY,AIRPORT OPERATIONS,18724,BAGCLK,32000
+E00043,WIELENGA,3146,CARY,FLIGHT OPERATIONS,18138,PILOT3,17000
+E00044,HALL,1804,CARY,SALES & MARKETING,19492,SALCLK,25000
+E00046,GOODYEAR,1754,CARY,FLIGHT OPERATIONS,19000,FLTAT1,44000
+E00047,ECKHAUSEN,1581,CARY,FLIGHT OPERATIONS,19397,FLTAT3,40000
+E00048,MOELL,2392,CARY,FLIGHT OPERATIONS,19724,FLTAT3,19000
+E00049,CHASE JR.,1355,CARY,FLIGHT OPERATIONS,18758,FLTAT1,29000
+E00050,DEXTER,1000,PHOENIX,CORPORATE OPERATIONS,19434,OFFMGR,95000
+E00051,LIVELY,1307,CARY,FINANCE & IT,19435,ITPROG,19000
+E00052,MELTON,2364,CARY,FLIGHT OPERATIONS,18803,FLTAT2,44000
+E00053,CURTIS,1468,CARY,AIRPORT OPERATIONS,19258,GRCREW,39000
+E00054,AGARWAL,1015,CARY,FINANCE & IT,19514,FINACT,26000
+E00055,WHITE JR.,3140,CARY,FLIGHT OPERATIONS,19746,PILOT3,25000
+E00056,POOLE,1068,TORONTO,AIRPORT OPERATIONS,19667,GRCREW,29000
+E00058,BOOZER,1204,CARY,SALES & MARKETING,19205,SALCLK,41000
 ;;;;
 data certadv.newsals;
    attrib EmpID length=$6 label='Employee Identification Number' format=$6. informat=$6.;
@@ -4706,6 +5032,16 @@ E00049,29000,32892.8710132338
 E00050,95000,109644.449530935
 E00051,19000,21812.7622021421
 ;;;;
+data certadv.convert;
+   input Name $1-8 @9 Weight1 Weight2 Weight3 Weight4 Weight5 Weight6;
+datalines;
+Alicia  153.44016 151.89694 151.67648 148.59004 145.5036  145.94452
+Betsy   115.96196 115.96196 113.97782 111.11184 109.78908 108.24586
+Brenda  151.23556 149.03096 147.7082  146.38544 145.06268 143.73992
+Carl    149.03096 146.82636 145.5036  144.18084 142.85808 141.53532
+Carmela 140.21256 137.7875  136.46474 135.36244 134.03968 128.30772
+David   155.64476 153.88108 152.55832 150.79464 149.47188 147.7082 
+;;;
 data certadv.qsales;
    input SalesRep $1-8 @10 Sales1 Sales2 Sales3 Sales4;
    datalines;
@@ -4713,23 +5049,6 @@ Britt    8400 8800 9300 9800
 Fruchten 9500 9300 9800 8900
 Goodyear 9150 9200 9650 11000
 ;;;;
-data certadv.prog1;
-   input FName$1-8 LName$10-18;
-datalines;
-Pete Henry
-Mary Johnson
-Alex Kinsley
-Dori O'Neil
-;
-data certadv.prog2;
-   input FName $1-8 LName $10-18;
-datalines;
-Clara Addams
-Pete Henry
-Dori O'Neil
-Cindy Phillips
-Mandi Young
-;
 data certadv.rain;
    input Amount;
 datalines;
@@ -4739,6 +5058,45 @@ datalines;
 .5
 6
 ;;;;
+data certadv.countdata;
+input string $char60.;
+datalines;
+The quick brown fox jumps over the lazy dog.
+        Leading blanks
+2+2=4
+/unix/path/names/use/slashes
+\Windows\Path\Names\Use\Backslashes
+;;;;
+data certadv.ReversedNames;
+   input name & $32.;
+   datalines;
+Jones, Fred
+Kavich, Kate
+Turley, Ron
+Dulix, Yolanda
+;;;;
+data certadv.confident;
+   input text $80.;
+   datalines;
+The phone number for Jack is (801)443-9876 but not until tonight.
+He can be reached at (910)998-8762 tomorrow for testing purposes.
+;;;;
+data certadv.lag;
+   input item @@;
+   datalines;
+1 2 3 4 5 6
+;
+run;
+data certadv.fitclass;
+   input Name $1-8 @9 Weight1 Weight2 Weight3 Weight4 Weight5 Weight6;
+datalines;
+Alicia  69.6 68.9 68.8 67.4 66.0 66.2
+Betsy   52.6 52.6 51.7 50.4 49.8 49.1
+Brenda  68.6 67.6 67.0 66.4 65.8 65.2
+Carl    67.6 66.6 66.0 65.4 64.8 64.2
+Carmela 63.6 62.5 61.9 61.4 60.8 58.2
+David   70.6 69.8 69.2 68.4 67.8 67.0
+;;;
 data certadv.newsals;
    attrib EmpID length=$6 label='Employee Identification Number' format=$6. informat=$6.;
    attrib Salary length=8 label='Employee Salary' format=DOLLAR10. informat=DOLLAR10.;
@@ -4802,6 +5160,63 @@ E00049,29000,32892.8710132338
 E00050,95000,109644.449530935
 E00051,19000,21812.7622021421
 ;;;;
+data certadv.country;
+input Country $1-2 CountryName $4-34 Population CountryID ContinentID;
+datalines;
+AU Australia                       20000000  160 96
+CA Canada                                 .  260 91
+DE Germany                         80000000  394 93
+IL Israel                          5000000   475 95
+TR Turkey                          70000000  905 95
+US United States                   280000000 926 91
+ZA South Africa                    43000000  801 94
+;
+data certadv.pets;
+input Name $1-7 Price Arr;
+format Price dollar8.;
+format Arr   date9.;
+datalines;
+ANA     25  21465
+FIFI    101 21385
+GAO     57  21161
+GAO     57  21161
+SPARKY  136 21443
+TRUFFLE 250 21414
+ZEUS    500 21277
+;
+data certadv.dogs;
+input Name $1-7 Price;
+format Price dollar8.;
+datalines;
+FIFI    101
+GEORGE  75
+SPARKY  136
+TRUFFLE 250
+;
+data certadv.winter;
+input Month Temp Precip;
+datalines;
+1 29 .15
+2 32 .17
+3 38 .20
+2 32 .17
+;
+data certadv.summer;
+input Month Temp Precip;
+datalines;
+7 78 .05
+8 85 .04
+9 83 .15
+;
+data certadv.dates;
+input Date;
+datalines;
+21456 8:30:01:34
+21656 12:45:02:40
+21688 14:30:10:25
+21478 6:45:01:30
+21368 16:30:10:32
+;
 data certadv.frequentflyers1;
    input FFID $ 1-6 MemberType $ 9-14 Name $ 17-41
          Address $ 44-63 PhoneNumber $ 66-77;
@@ -7997,6 +8412,417 @@ C004 Database Design           2  375
 C005 Artificial Intelligence   2  400
 C006 Computer Aided Design     5 1600
 ;;;;
+data certadv.y02jan;
+	input Week Sale @11 Day $9.;
+	datalines;
+1 1869.33 Monday
+1 1689.01 Tuesday
+1 2655.00 Wednesday
+1 1556.23 Thursday
+1 3341.11 Friday
+2 2212.63 Monday
+2 1701.85 Tuesday
+2 1005.46 Wednesday
+2 1990.86 Thursday
+2 3642.53 Friday
+3 1775.34 Monday
+3 1639.72 Tuesday
+3 2335.69 Wednesday
+3 2863.82 Thursday
+3 3010.17 Friday
+4 1398.22 Monday
+4 1330.58 Tuesday
+4 1458.67 Wednesday
+4 1623.42 Thursday
+4 2336.00 Friday
+5 2034.97 Monday
+5 1803.04 Tuesday
+5 1953.38 Wednesday
+5 2064.67 Thursday
+5 2336.44 Friday
+6 1046.25 Monday
+6 1334.85 Tuesday
+6 1455.88 Wednesday
+6 2288.30 Thursday
+6 3401.68 Friday
+7 1652.73 Monday
+7 1987.24 Tuesday
+7 1773.12 Wednesday
+7 2468.81 Thursday
+7 3014.25 Friday
+8 1996.77 Monday
+8 1843.54 Tuesday
+8 1268.59 Wednesday
+8 1663.84 Thursday
+8 2657.44 Friday
+9 1699.74 Monday
+9 1798.32 Tuesday
+9 1973.16 Wednesday
+9 2634.84 Thursday
+9 3219.98 Friday
+10 1883.47 Monday
+10 1432.83 Tuesday
+10 1803.44 Wednesday
+10 2137.49 Thursday
+10 2750.70 Friday
+;;;;
+data certadv.revenue;
+   attrib Origin length=$3;
+   attrib Dest length=$3;
+   attrib FlightID length=$7;
+   attrib Date length=8 format=DATE9.;
+   attrib Rev1st length=8;
+   attrib RevBusiness length=8;
+   attrib RevEcon length=8;
+
+   infile datalines dsd;
+   input
+      Origin
+      Dest
+      FlightID
+      Date
+      Rev1st
+      RevBusiness
+      RevEcon
+   ;
+datalines4;
+ANC,RDU,IA03400,20580,15829,28420,68688
+ANC,RDU,IA03400,20592,20146,26460,72981
+ANC,RDU,IA03400,20604,20146,23520,59625
+ANC,RDU,IA03401,20587,15829,22540,58671
+ANC,RDU,IA03401,20599,20146,22540,65826
+CBR,WLG,IA10500,20582,15496,16687,28710
+CBR,WLG,IA10500,20594,13708,19943,26928
+CBR,WLG,IA10500,20606,16092,21164,27324
+CBR,WLG,IA10501,20589,13112,16280,23760
+CBR,WLG,IA10501,20601,16092,18722,30888
+CCU,HKG,IA09900,20584,18306,19866,34875
+CCU,HKG,IA09900,20596,18306,21252,27900
+CCU,HKG,IA09900,20608,14916,21252,32400
+CCU,HKG,IA09901,20591,16272,20790,32400
+CCU,HKG,IA09901,20603,16272,19404,27225
+CCU,PEK,IA09700,20586,19992,27832,36010
+CCU,PEK,IA09700,20598,19992,23288,42381
+CCU,PEK,IA09701,20581,19992,27832,39057
+CCU,PEK,IA09701,20593,23324,28968,34902
+CCU,PEK,IA09701,20605,18326,24992,42658
+CCU,SIN,IA09300,20588,19318,23322,34086
+CCU,SIN,IA09300,20600,18575,25350,29393
+CCU,SIN,IA09301,20583,20061,21801,33592
+CCU,SIN,IA09301,20595,19318,25857,32357
+CCU,SIN,IA09301,20607,17089,25857,38285
+CPT,FRA,IA08601,20591,40936,70563,107865
+DEL,JRS,IA09000,20586,12372,19684,43092
+DEL,JRS,IA09000,20598,12372,17575,52668
+DEL,JRS,IA09001,20581,13403,18981,46854
+DEL,JRS,IA09001,20593,14434,21090,50274
+DEL,JRS,IA09001,20605,14434,16169,42066
+DXB,FRA,IA07800,20588,18630,37224,59328
+DXB,FRA,IA07800,20600,18630,40608,53148
+DXB,FRA,IA07801,20583,19872,37224,60976
+DXB,FRA,IA07801,20595,21114,43992,51912
+DXB,FRA,IA07801,20607,18630,38070,63448
+FRA,CPT,IA08501,20592,43344,86973,105468
+FRA,DXB,IA07700,20587,19872,47376,58092
+FRA,DXB,IA07700,20599,22356,43992,55620
+FRA,DXB,IA07701,20582,23598,46530,62624
+FRA,DXB,IA07701,20594,22356,41454,53972
+FRA,DXB,IA07701,20606,19872,38070,60564
+FRA,NBO,IA08700,20589,22694,30940,70478
+FRA,NBO,IA08700,20601,21073,27625,68864
+FRA,RDU,IA00400,20584,21132,30025,93015
+FRA,RDU,IA00400,20596,22893,28824,87750
+FRA,RDU,IA00400,20608,24654,30025,75465
+FRA,RDU,IA00401,20591,19371,32427,76050
+FRA,RDU,IA00401,20603,21132,28824,85410
+HKG,CCU,IA10000,20586,18306,19404,32175
+HKG,CCU,IA10000,20598,18984,23100,32400
+HKG,CCU,IA10001,20581,17628,19404,33525
+HKG,CCU,IA10001,20593,18984,23100,33975
+HKG,CCU,IA10001,20605,18984,20328,30600
+HKG,HND,IA10900,20588,19980,21672,36900
+HKG,HND,IA10900,20600,19240,23184,33948
+HKG,HND,IA10901,20583,17760,20160,32718
+HKG,HND,IA10901,20595,19240,22176,36408
+HKG,HND,IA10901,20607,19980,24192,30750
+HKG,SYD,IA10100,20590,34074,41280,114478
+HKG,SYD,IA10100,20602,34074,39990,101898
+HKG,SYD,IA10101,20585,32181,39990,97495
+HKG,SYD,IA10101,20597,32181,43860,107559
+HND,HKG,IA11000,20580,19240,22680,34932
+HND,HKG,IA11000,20592,17760,21168,36654
+HND,HKG,IA11000,20604,18500,24696,30012
+HND,HKG,IA11001,20587,20720,24192,32472
+HND,HKG,IA11001,20599,19980,20160,34440
+HND,SFO,IA11100,20582,33968,40516,107160
+HND,SFO,IA11100,20594,33968,41963,137475
+HND,SFO,IA11100,20606,31845,46304,121260
+HND,SFO,IA11101,20589,38214,46304,118440
+HND,SFO,IA11101,20601,40337,46304,133245
+HNL,SFO,IA03000,20584,11856,16152,47888
+HNL,SFO,IA03000,20596,10868,17498,51168
+HNL,SFO,IA03000,20608,10868,16825,46248
+HNL,SFO,IA03001,20591,10868,18171,48544
+HNL,SFO,IA03001,20603,11856,19517,52808
+JED,LHR,IA08200,20586,23161,44820,51435
+JED,LHR,IA08200,20598,18285,44820,59535
+JED,LHR,IA08201,20581,18285,44820,61560
+JED,LHR,IA08201,20593,21942,35690,66015
+JED,LHR,IA08201,20605,21942,43160,64800
+JNB,LHR,IA08401,20586,34950,76224,121518
+JRS,DEL,IA08900,20585,11341,18278,48564
+JRS,DEL,IA08900,20597,13403,21090,43776
+JRS,DEL,IA08901,20580,14434,16872,51300
+JRS,DEL,IA08901,20592,11341,16169,54720
+JRS,DEL,IA08901,20604,11341,21090,54378
+LHR,JED,IA08100,20587,20723,40670,54270
+LHR,JED,IA08100,20599,21942,42330,63990
+LHR,JED,IA08101,20582,19504,37350,50625
+LHR,JED,IA08101,20594,23161,46480,59535
+LHR,JED,IA08101,20606,23161,38180,66015
+LHR,JNB,IA08301,20587,41940,76224,111456
+LHR,RDU,IA00200,20585,20800,30520,79650
+LHR,RDU,IA00200,20597,19200,29430,80712
+LHR,RDU,IA00201,20580,19200,26160,71154
+LHR,RDU,IA00201,20592,19200,26160,73809
+LHR,RDU,IA00201,20604,17600,26160,84429
+NBO,FRA,IA08800,20587,19452,26520,73706
+NBO,FRA,IA08800,20599,19452,32045,84466
+PEK,CCU,IA09800,20582,20825,25560,41273
+PEK,CCU,IA09800,20594,20825,22720,35456
+PEK,CCU,IA09800,20606,23324,24424,38226
+PEK,CCU,IA09801,20589,23324,27264,37949
+PEK,CCU,IA09801,20601,23324,27264,40442
+RDU,ANC,IA03300,20584,15829,24500,69165
+RDU,ANC,IA03300,20596,18707,22540,72981
+RDU,ANC,IA03300,20608,17268,29400,58671
+RDU,ANC,IA03301,20591,17268,25480,76797
+RDU,ANC,IA03301,20603,20146,29400,73458
+RDU,FRA,IA00300,20586,21132,31226,94185
+RDU,FRA,IA00300,20598,24654,30025,75465
+RDU,FRA,IA00301,20581,24654,31226,72540
+RDU,FRA,IA00301,20593,19371,34829,90090
+RDU,FRA,IA00301,20605,21132,27623,80145
+RDU,LHR,IA00100,20588,20800,32700,67968
+RDU,LHR,IA00100,20600,22400,31610,77526
+RDU,LHR,IA00101,20583,19200,30520,65313
+RDU,LHR,IA00101,20595,17600,30520,79119
+RDU,LHR,IA00101,20607,20800,25070,75933
+SFO,HND,IA11200,20590,40337,49198,113505
+SFO,HND,IA11200,20602,38214,50645,140295
+SFO,HND,IA11201,20585,40337,47751,141000
+SFO,HND,IA11201,20597,40337,46304,130425
+SFO,HNL,IA02900,20580,13832,20190,42640
+SFO,HNL,IA02900,20592,12844,16825,45592
+SFO,HNL,IA02900,20604,11856,16152,48216
+SFO,HNL,IA02901,20587,12844,16825,42640
+SFO,HNL,IA02901,20599,13832,16825,45264
+SIN,CCU,IA09400,20582,20804,24336,38038
+SIN,CCU,IA09400,20594,16346,22308,37544
+SIN,CCU,IA09400,20606,17832,25350,30628
+SIN,CCU,IA09401,20589,17089,20787,38779
+SIN,CCU,IA09401,20601,20061,24843,36556
+SYD,HKG,IA10200,20584,34074,42570,108817
+SYD,HKG,IA10200,20596,28395,38700,120768
+SYD,HKG,IA10200,20608,35967,34830,123284
+SYD,HKG,IA10201,20591,32181,39990,111333
+SYD,HKG,IA10201,20603,34074,37410,107559
+WLG,CBR,IA10600,20586,15496,17908,29106
+;;;;
+data certadv.ctargets;
+   attrib Year length=8;
+   attrib Jan length=8;
+   attrib Feb length=8;
+   attrib Mar length=8;
+   attrib Apr length=8;
+   attrib May length=8;
+   attrib Jun length=8;
+   attrib Jul length=8;
+   attrib Aug length=8;
+   attrib Sep length=8;
+   attrib Oct length=8;
+   attrib Nov length=8;
+   attrib Dec length=8;
+
+   infile datalines dsd;
+   input
+      Year
+      Jan
+      Feb
+      Mar
+      Apr
+      May
+      Jun
+      Jul
+      Aug
+      Sep
+      Oct
+      Nov
+      Dec
+   ;
+datalines4;
+2016,192284420,86376721,28526103,260386468,109975326,102833104,196728648,236996122,112413744,125401565,72551855,136042505
+2017,108645734,147656369,202158055,41160707,264294440,267135485,208694865,83456868,286846554,275721406,230488351,24901752
+2018,85730444,74168740,39955768,312654811,318149340,187270927,123394421,34273985,151565752,141528519,178043261,181668256
+;;;;
+data certadv.expenses;
+   attrib FlightID length=$8;
+   attrib Date length=8 format=DATE9.;
+   attrib Expenses length=8;
+
+   infile datalines dsd;
+   input
+      FlightID
+      Date
+      Expenses
+   ;
+datalines4;
+IA03400,20580,89155
+IA03400,20592,39599
+IA03400,20604,66800
+IA03401,20587,33076
+IA03401,20599,106032
+IA10500,20582,47870
+IA10500,20594,16106
+IA10500,20606,29206
+IA10501,20589,36028
+IA10501,20601,23105
+IA09900,20584,57302
+IA09900,20596,4013
+IA09900,20608,45662
+IA09901,20591,1261
+IA09901,20603,35690
+IA09700,20586,73887
+IA09700,20598,24281
+IA09701,20581,12366
+IA09701,20593,58435
+IA09701,20605,12876
+IA09300,20588,1200
+IA09300,20600,38140
+IA09301,20583,47081
+IA09301,20595,9187
+IA09301,20607,7020
+IA08601,20591,135330
+IA09000,20586,50055
+IA09000,20598,10592
+IA09001,20581,40542
+IA09001,20593,58189
+IA09001,20605,65363
+IA07800,20588,53526
+IA07800,20600,68259
+IA07801,20583,59421
+IA07801,20595,4758
+IA07801,20607,119249
+IA08501,20592,220266
+IA07700,20587,111046
+IA07700,20599,103568
+IA07701,20582,22721
+IA07701,20594,35768
+IA07701,20606,48923
+IA08700,20589,118044
+IA08700,20601,30288
+IA00400,20584,22754
+IA00400,20596,47782
+IA00400,20608,85973
+IA00401,20591,25243
+IA00401,20603,111484
+IA10000,20586,18928
+IA10000,20598,41392
+IA10001,20581,34004
+IA10001,20593,73228
+IA10001,20605,53602
+IA10900,20588,59709
+IA10900,20600,72139
+IA10901,20583,65168
+IA10901,20595,1321
+IA10901,20607,12752
+IA10100,20590,11326
+IA10100,20602,82918
+IA10101,20585,87730
+IA10101,20597,166744
+IA11000,20580,76521
+IA11000,20592,57428
+IA11000,20604,31209
+IA11001,20587,7196
+IA11001,20599,67623
+IA11100,20582,136366
+IA11100,20594,111941
+IA11100,20606,91650
+IA11101,20589,5589
+IA11101,20601,109002
+IA03000,20584,3070
+IA03000,20596,645
+IA03000,20608,64552
+IA03001,20591,61365
+IA03001,20603,32840
+IA08200,20586,53436
+IA08200,20598,4647
+IA08201,20581,38418
+IA08201,20593,13157
+IA08201,20605,61546
+IA08401,20586,200962
+IA08900,20585,324
+IA08900,20597,55347
+IA08901,20580,81810
+IA08901,20592,51008
+IA08901,20604,37740
+IA08100,20587,70755
+IA08100,20599,38436
+IA08101,20582,28159
+IA08101,20594,114963
+IA08101,20606,4618
+IA08301,20587,228761
+IA00200,20585,71756
+IA00200,20597,46757
+IA00201,20580,21380
+IA00201,20592,10399
+IA00201,20604,72312
+IA08800,20587,65422
+IA08800,20599,109003
+IA09800,20582,76750
+IA09800,20594,11937
+IA09800,20606,52557
+IA09801,20589,69022
+IA09801,20601,17768
+IA03300,20584,75484
+IA03300,20596,40757
+IA03300,20608,27584
+IA03301,20591,9143
+IA03301,20603,11853
+IA00300,20586,111428
+IA00300,20598,53959
+IA00301,20581,122441
+IA00301,20593,9292
+IA00301,20605,37431
+IA00100,20588,41096
+IA00100,20600,58541
+IA00101,20583,21473
+IA00101,20595,15504
+IA00101,20607,42258
+IA11200,20590,178573
+IA11200,20602,124293
+IA11201,20585,196476
+IA11201,20597,69644
+IA02900,20580,35539
+IA02900,20592,73737
+IA02900,20604,36738
+IA02901,20587,49702
+IA02901,20599,6174
+IA09400,20582,80058
+IA09400,20594,32235
+IA09400,20606,25237
+IA09401,20589,9714
+IA09401,20601,33359
+IA10200,20584,176807
+IA10200,20596,122033
+IA10200,20608,25537
+IA10201,20591,97347
+IA10201,20603,8864
+IA10600,20586,15675
+IA10600,20598,27220
+IA10601,20581,39364
+IA10601,20593,4991
+;;;;
 data certadv.acities;
    attrib City length=$22 label='City Where Airport is Located';
    attrib Code length=$3 label='Start Point';
@@ -8061,6 +8887,211 @@ Praha (Prague),PRG,Ruzyne,Czech Republic
 "San Francisco, CA",SFO,San Francisco International Airport,USA
 Singapore,SIN,Changi International Airport,Singapore
 "Sydney, New South Wale",SYD,Kingsford Smith,Australia
+;;;;
+data certadv.monthsum;
+   attrib SaleMon length=$7 label='Sales Month';
+   attrib RevCargo length=8 format=DOLLAR15.2;
+   attrib Rev1st length=8 format=DOLLAR15.2;
+   attrib RevBusiness length=8 format=DOLLAR15.2;
+   attrib RevEcon length=8 format=DOLLAR15.2;
+   attrib MonthNo length=8;
+
+   infile datalines dsd;
+   input
+      SaleMon
+      RevCargo
+      Rev1st
+      RevBusiness
+      RevEcon
+      MonthNo
+   ;
+datalines4;
+JAN2016,171520869.1,51136353,34897844,169193900,1
+JAN2017,238786807.599999,71197270,48749365,235462316,1
+JAN2018,280350393,83667651,57385822,278553207,1
+FEB2016,177671530.399999,52867177,36397032,175250984,2
+FEB2017,215959695.5,64092727,44111168,212667536,2
+FEB2018,253999924,75811358,51871453,251355652,2
+MAR2016,196591378.2,58562490,40116649,193982585,3
+MAR2017,239056025.55,71173645,48767636,235501953,3
+MAR2018,281433310,83864006,57546222,278491696,3
+APR2016,380804120.200003,113826330,77817068,375598996,4
+APR2017,231609633.7,68910955,47381292,227978686,4
+APR2018,272049319,81059042,55786262,269547946,4
+MAY2016,196261573.201299,58604030,40112475,194336811,5
+MAY2017,238245242.85,71099462,48712345,235727428,5
+MAY2018,280369422,83864513,57572886,278797273,5
+JUN2016,190560828.5,56741721,38819235,187727540,6
+JUN2017,230952368.65,68888876,47285354,228396559,6
+JUN2018,271894927,81059185,55809052,269688978,6
+JUL2016,197163278.201299,58606766,40257451,193861879,7
+JUL2017,239396211.7,71265477,48963239,235369298,7
+JUL2018,280649618,83816720,57513302,278553244,7
+AUG2016,196639501.099999,58583691,40137702,193618096,8
+AUG2017,238629758.201299,71069513,48835260,235620482,8
+AUG2018,281582229,83786273,57497600,277956633,8
+SEP2016,190535012.499999,56702750,38989785,187695144,9
+SEP2017,231186018.35,68862789,47306665,228130158,9
+SEP2018,272253650,81013380,55709005,269787324,9
+OCT2016,196957153.399998,58699076,40198082,194082116,10
+OCT2017,238905712.4,71173722,48730203,235350192,10
+OCT2018,280100981,83811034,57459052,278739086,10
+NOV2016,190228066.7,56626819,38751654,187579685,11
+NOV2017,231314162.65,68892713,47407571,227933862,11
+NOV2018,272428947,81128123,55698892,269158794,11
+DEC2016,196504412.999999,58561897,40418188,194509877,12
+DEC2017,238689980.699999,71261837,48955361,236136735,12
+DEC2018,272149940,81277002,55898552,269719327,12
+;;;;
+data certadv.dnunder;
+   attrib FlightID length=$7 label='Flight Number';
+   attrib RouteID length=$7 label='Route Number';
+   attrib Date length=8 label='Scheduled Date of Flight' format=DATE9.;
+   attrib Expenses length=8;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Date
+      Expenses
+   ;
+datalines4;
+IA10200,0000102,20945,154269
+IA10200,0000102,20953,175079
+IA10200,0000102,20961,20041
+IA10200,0000102,20969,124618
+IA10304,0000103,20945,1167
+IA10302,0000103,20948,836
+IA10300,0000103,20951,2900
+IA10304,0000103,20953,2259
+IA10302,0000103,20956,1596
+IA10300,0000103,20959,1831
+IA10304,0000103,20961,2865
+IA10302,0000103,20964,1259
+IA10300,0000103,20967,622
+IA10304,0000103,20969,1078
+IA10302,0000103,20972,2413
+IA10400,0000104,20945,495
+IA10404,0000104,20947,1183
+IA10402,0000104,20950,557
+IA10400,0000104,20953,538
+IA10404,0000104,20955,2199
+IA10402,0000104,20958,292
+IA10400,0000104,20961,1097
+IA10404,0000104,20963,675
+IA10402,0000104,20966,1533
+IA10400,0000104,20969,2375
+IA10404,0000104,20971,1870
+IA10402,0000104,20974,599
+IA10500,0000105,20951,24752
+IA10500,0000105,20959,6599
+IA10500,0000105,20967,14758
+IA10600,0000106,20945,14986
+IA10600,0000106,20953,5631
+IA10600,0000106,20961,28187
+IA10600,0000106,20969,59152
+IA10704,0000107,20945,4846
+IA10702,0000107,20948,4160
+IA10700,0000107,20951,4036
+IA10704,0000107,20953,6197
+IA10702,0000107,20956,1265
+IA10700,0000107,20959,5365
+IA10704,0000107,20961,2278
+IA10702,0000107,20964,3653
+IA10700,0000107,20967,4706
+IA10704,0000107,20969,6168
+IA10702,0000107,20972,1656
+IA10800,0000108,20945,667
+IA10804,0000108,20947,5533
+IA10802,0000108,20950,2030
+IA10800,0000108,20953,451
+IA10804,0000108,20955,5221
+IA10802,0000108,20958,6019
+IA10800,0000108,20961,4675
+IA10804,0000108,20963,1190
+IA10802,0000108,20966,1501
+IA10800,0000108,20969,4869
+IA10804,0000108,20971,1315
+IA11802,0000108,20974,3720
+;;;;
+data certadv.flights;
+   attrib flight length=$8;
+   attrib temp length=8;
+   attrib wspeed length=8;
+
+   infile datalines dsd;
+   input
+      flight
+      temp
+      wspeed
+   ;
+datalines4;
+IA2736,-8,9
+IA6352,-4,16
+;;;;
+data certadv.contrib;
+   attrib EmpID length=$6 label='Employee Identification Number' format=$6. informat=$6.;
+   attrib QtrNum length=$8;
+   attrib Amount length=8;
+
+   infile datalines dsd;
+   input
+      EmpID:$6.
+      QtrNum
+      Amount
+   ;
+datalines4;
+E00224,qtr1,12
+E00224,qtr2,33
+E00224,qtr3,22
+E00224,qtr4,
+E00367,qtr1,35
+E00367,qtr2,48
+E00367,qtr3,40
+E00367,qtr4,30
+E00441,qtr1,
+E00441,qtr2,63
+E00441,qtr3,89
+E00441,qtr4,90
+E00587,qtr1,16
+E00587,qtr2,19
+E00587,qtr3,30
+E00587,qtr4,29
+E00598,qtr1,4
+E00598,qtr2,8
+E00598,qtr3,6
+E00598,qtr4,1
+E00621,qtr1,10
+E00621,qtr2,12
+E00621,qtr3,15
+E00621,qtr4,25
+E00630,qtr1,67
+E00630,qtr2,86
+E00630,qtr3,52
+E00630,qtr4,84
+E00705,qtr1,9
+E00705,qtr2,7
+E00705,qtr3,49
+E00705,qtr4,2
+E00727,qtr1,8
+E00727,qtr2,27
+E00727,qtr3,25
+E00727,qtr4,14
+E00860,qtr1,10
+E00860,qtr2,15
+E00860,qtr3,6
+E00860,qtr4,20
+E00901,qtr1,19
+E00901,qtr2,21
+E00901,qtr3,3
+E00901,qtr4,24
+E00907,qtr1,18
+E00907,qtr2,26
+E00907,qtr3,46
+E00907,qtr4,65
+E00947,qtr1,8
+E00947,qtr2,10
 ;;;;
 data certadv.empdata;
    attrib Division length=$30 label='Division' format=$30. informat=$30.;
@@ -8141,6 +9172,589 @@ FINANCE & IT,18435,LIVELY,ROBIN P.,USA,CARY,1307,E00051,ITPROG,19000
 data certadv.empdata(index=(EmpID/unique));
      set certadv.empdata;
 run;
+data certadv.cargorev;
+   attrib Month length=8;
+   attrib Date length=8;
+   attrib RevCargo length=8;
+   attrib Route length=$7;
+
+   infile datalines dsd;
+   input
+      Month
+      Date
+      RevCargo
+      Route
+   ;
+datalines4;
+1,20610,2260,Route2
+1,20610,220293,Route3
+1,20610,4655,Route1
+1,20610,4004,Route1
+1,20611,8911,Route1
+1,20611,102900,Route3
+1,20612,1963,Route3
+1,20612,3321,Route5
+1,20612,2562,Route3
+1,20612,9447,Route1
+1,20612,47082,Route4
+1,20613,4089,Route3
+1,20613,1605,Route1
+1,20614,1911,Route3
+1,20614,7020,Route4
+1,20614,6665,Route5
+1,20614,5461,Route5
+1,20614,5060,Route1
+1,20614,2407,Route1
+1,20614,53694,Route4
+1,20615,5643,Route1
+1,20616,4000,Route1
+1,20616,120989,Route6
+1,20617,7661,Route5
+1,20617,5282,Route3
+1,20617,3864,Route3
+1,20617,190605,Route4
+1,20617,2821,Route1
+1,20617,4515,Route1
+1,20618,2198,Route3
+1,20618,4455,Route3
+1,20618,21672,Route3
+1,20618,5031,Route1
+1,20619,43576,Route4
+1,20619,5699,Route3
+1,20619,3731,Route1
+1,20620,4725,Route5
+1,20620,71440,Route1
+1,20620,7667,Route3
+1,20620,4879,Route1
+1,20620,3485,Route1
+1,20620,2740,Route2
+1,20620,44804,Route2
+1,20621,2422,Route3
+1,20621,3375,Route3
+1,20621,4104,Route3
+1,20622,2740,Route2
+1,20622,3807,Route5
+1,20622,5814,Route3
+1,20622,49416,Route1
+;;;;
+data certadv.cargo15;
+   attrib FlightID length=$7 label='Flight Number';
+   attrib RouteID length=$7 label='Route Number';
+   attrib Origin length=$3 label='Start Point';
+   attrib Dest length=$3 label='Destination';
+   attrib CapCargo length=8 label='Aircraft Capacity - Total Payload in Pounds' format=8. informat=8.;
+   attrib Date length=8 label='Scheduled Date of Flight' format=DATE9.;
+   attrib CargoWgt length=8 label='Weight of Cargo in Pounds';
+   attrib CargoRev length=8 label='Revenue from Cargo' format=DOLLAR15.2;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Origin
+      Dest
+      CapCargo:BEST32.
+      Date
+      CargoWgt
+      CargoRev
+   ;
+datalines4;
+IA00100,0000001,RDU,LHR,82400,20245,45600,111720
+IA00100,0000001,RDU,LHR,82400,20457,44600,109270
+IA00100,0000001,RDU,LHR,82400,20476,44600,109270
+IA00100,0000001,RDU,LHR,82400,20489,47400,116130
+IA00100,0000001,RDU,LHR,82400,20607,44200,108290
+IA00101,0000001,RDU,LHR,82400,20245,48000,117600
+IA00101,0000001,RDU,LHR,82400,20321,45400,111230
+IA00101,0000001,RDU,LHR,82400,20344,49600,121520
+IA00101,0000001,RDU,LHR,82400,20365,43000,105350
+IA00101,0000001,RDU,LHR,82400,20474,47400,116130
+IA00101,0000001,RDU,LHR,82400,20480,48800,119560
+IA00200,0000002,LHR,RDU,82400,20292,46600,114170
+IA00200,0000002,LHR,RDU,82400,20332,42800,104860
+IA00200,0000002,LHR,RDU,82400,20558,44800,109760
+IA00201,0000002,LHR,RDU,82400,20273,42200,103390
+IA00201,0000002,LHR,RDU,82400,20292,43800,107310
+IA00201,0000002,LHR,RDU,82400,20312,43000,105350
+IA00201,0000002,LHR,RDU,82400,20371,43200,105840
+IA00201,0000002,LHR,RDU,82400,20430,45800,112210
+IA00201,0000002,LHR,RDU,82400,20467,44000,107800
+IA00201,0000002,LHR,RDU,82400,20474,44400,108780
+IA00201,0000002,LHR,RDU,82400,20478,47600,116620
+IA00201,0000002,LHR,RDU,82400,20607,49200,120540
+IA00300,0000003,RDU,FRA,82400,20270,44400,119880
+IA00300,0000003,RDU,FRA,82400,20289,42800,115560
+IA00300,0000003,RDU,FRA,82400,20304,45000,121500
+IA00300,0000003,RDU,FRA,82400,20521,47200,127440
+IA00300,0000003,RDU,FRA,82400,20530,44400,119880
+IA00300,0000003,RDU,FRA,82400,20567,43800,118260
+IA00301,0000003,RDU,FRA,82400,20313,44800,120960
+IA00301,0000003,RDU,FRA,82400,20372,48800,131760
+IA00301,0000003,RDU,FRA,82400,20450,45600,123120
+IA00301,0000003,RDU,FRA,82400,20451,45400,122580
+IA00301,0000003,RDU,FRA,82400,20463,43600,117720
+IA00301,0000003,RDU,FRA,82400,20483,44800,120960
+IA00301,0000003,RDU,FRA,82400,20558,45400,122580
+IA00301,0000003,RDU,FRA,82400,20584,43400,117180
+IA00301,0000003,RDU,FRA,82400,20605,48000,129600
+IA00400,0000004,FRA,RDU,82400,20332,43600,117720
+IA00400,0000004,FRA,RDU,82400,20429,43200,116640
+IA00400,0000004,FRA,RDU,82400,20530,44400,119880
+IA00400,0000004,FRA,RDU,82400,20575,49200,132840
+IA00401,0000004,FRA,RDU,82400,20268,49800,134460
+IA00401,0000004,FRA,RDU,82400,20572,45600,123120
+IA00500,0000005,RDU,JFK,77400,20330,27000,7290
+IA00500,0000005,RDU,JFK,77400,20344,26000,7020
+IA00500,0000005,RDU,JFK,77400,20496,31600,8532
+IA00500,0000005,RDU,JFK,77400,20539,25000,6750
+IA00500,0000005,RDU,JFK,77400,20581,29600,7992
+IA00501,0000005,RDU,JFK,77400,20477,33600,9072
+;;;;
+data certadv.cargo15(index=(FlghtDte=(flightid date)));
+     set certadv.cargo15;
+run;
+data certadv.newcgnum;
+   attrib FlightID length=$8;
+   attrib RouteID length=$8;
+   attrib Origin length=$8;
+   attrib Dest length=$8;
+   attrib CapCargo length=8;
+   attrib Date length=8;
+   attrib CargoWgt length=8;
+   attrib CargoRev length=8;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Origin
+      Dest
+      CapCargo
+      Date
+      CargoWgt
+      CargoRev
+   ;
+datalines4;
+IA00100,0000011,RDU,LHR,35055,21245,,121879.9
+IA00101,0000011,LHR,RDU,35055,21321,14190,2322
+IA00200,0000012,LHR,RDU,35055,21332,10102,9857.6
+IA00300,0000013,RDU,FRA,35055,21289,,3973.2
+IA00400,0000014,FRA,RDU,35055,21332,11770,5521.2
+;;;;
+data certadv.capinfo;
+   attrib FlightID length=$7 label='Flight Number';
+   attrib RouteID length=$7 label='Route Number';
+   attrib Origin length=$3 label='Start Point';
+   attrib Dest length=$3 label='Dest';
+   attrib Cap1st length=8 label='Aircraft Capacity - First Class Passengers' format=8. informat=8.;
+   attrib CapBusiness length=8 label='Aircraft Capacity - Business Class Passengers' format=8. informat=8.;
+   attrib CapEcon length=8 label='Aircraft Capacity - Economy Class Passengers' format=8. informat=8.;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Origin
+      Dest
+      Cap1st:BEST32.
+      CapBusiness:BEST32.
+      CapEcon:BEST32.
+   ;
+datalines4;
+IA00100,0000001,RDU,LHR,14,30,163
+IA00201,0000002,LHR,RDU,14,30,163
+IA00300,0000003,RDU,FRA,14,30,163
+IA00400,0000004,FRA,RDU,14,30,163
+IA00500,0000005,RDU,JFK,16,,251
+IA00600,0000006,JFK,RDU,16,,251
+IA00700,0000007,RDU,SFO,16,,251
+IA00800,0000008,SFO,RDU,16,,251
+IA00900,0000009,RDU,LAX,16,,251
+IA01000,0000010,LAX,RDU,16,,251
+IA01100,0000011,RDU,ORD,12,,138
+IA01200,0000012,ORD,RDU,12,,138
+IA01300,0000013,RDU,IAD,12,,138
+IA01400,0000014,IAD,RDU,12,,138
+IA01500,0000015,RDU,SEA,16,,251
+IA01600,0000016,SEA,RDU,16,,251
+IA01700,0000017,SEA,SFO,12,,138
+IA01800,0000018,SFO,SEA,12,,138
+IA01900,0000019,RDU,BOS,12,,138
+IA02000,0000020,BOS,RDU,12,,138
+IA02100,0000021,RDU,DFW,12,,138
+IA02200,0000022,DFW,RDU,12,,138
+IA02300,0000023,RDU,BHM,12,,138
+IA02400,0000024,BHM,RDU,12,,138
+IA02500,0000025,RDU,IND,12,,138
+IA02600,0000026,IND,RDU,12,,138
+IA02700,0000027,RDU,MIA,12,,138
+IA02800,0000028,MIA,RDU,12,,138
+IA02900,0000029,SFO,HNL,14,30,163
+IA03000,0000030,HNL,SFO,14,30,163
+IA03100,0000031,SFO,ANC,16,,251
+IA03200,0000032,ANC,SFO,16,,251
+IA03300,0000033,RDU,ANC,14,30,163
+IA03400,0000034,ANC,RDU,14,30,163
+IA03500,0000035,RDU,BNA,12,,138
+IA03600,0000036,BNA,RDU,12,,138
+IA03700,0000037,RDU,MSY,12,,138
+IA03800,0000038,MSY,RDU,12,,138
+IA03900,0000039,RDU,MCI,12,,138
+IA04000,0000040,MCI,RDU,12,,138
+IA04100,0000041,RDU,PWM,12,,138
+IA04200,0000042,PWM,RDU,12,,138
+IA04300,0000043,LHR,CDG,14,,125
+IA04400,0000044,CDG,LHR,14,,125
+IA04500,0000045,LHR,GLA,14,,125
+IA04600,0000046,GLA,LHR,14,,125
+IA04700,0000047,LHR,FRA,14,,125
+IA04800,0000048,FRA,LHR,14,,125
+IA04900,0000049,LHR,BRU,14,,125
+IA05000,0000050,BRU,LHR,14,,125
+;;;;
+data certadv.cap2017;
+   attrib FlightID length=$7 label='Flight Number';
+   attrib RouteID length=$7 label='Route Number';
+   attrib Origin length=$3 label='Start Point';
+   attrib Dest length=$3 label='Destination';
+   attrib Cap1st length=8 label='Aircraft Capacity - First Class Passengers' format=8. informat=8.;
+   attrib CapBusiness length=8 label='Aircraft Capacity - Business Class Passengers' format=8. informat=8.;
+   attrib CapEcon length=8 label='Aircraft Capacity - Economy Class Passengers' format=8. informat=8.;
+   attrib Date length=8 label='Scheduled Date of Flight' format=DATE9. informat=DATE9.;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Origin
+      Dest
+      Cap1st:BEST32.
+      CapBusiness:BEST32.
+      CapEcon:BEST32.
+      Date
+   ;
+datalines4;
+IA00100,0000001,RDU,LHR,14,30,163,13JAN2017
+IA00101,0000001,RDU,LHR,14,30,163,16JAN2017
+IA00201,0000002,LHR,RDU,14,30,163,11JAN2017
+IA00301,0000003,RDU,FRA,14,30,163,27JAN2017
+IA00603,0000006,JFK,RDU,16,34,251,06JAN2017
+IA00900,0000009,RDU,LAX,16,34,251,10JAN2017
+IA00901,0000009,RDU,LAX,16,34,251,28JAN2017
+IA00903,0000009,RDU,LAX,16,34,251,31JAN2017
+IA01003,0000010,LAX,RDU,16,34,251,12JAN2017
+IA01100,0000011,RDU,ORD,12,0,138,11JAN2017
+IA01101,0000011,RDU,ORD,12,0,138,11JAN2017
+IA01203,0000012,ORD,RDU,12,0,138,04JAN2017
+IA01202,0000012,ORD,RDU,12,0,138,14JAN2017
+IA01202,0000012,ORD,RDU,12,0,138,18JAN2017
+IA01303,0000013,RDU,IAD,12,0,138,01JAN2017
+IA01302,0000013,RDU,IAD,12,0,138,04JAN2017
+IA01401,0000014,IAD,RDU,12,0,138,06JAN2017
+IA01402,0000014,IAD,RDU,12,0,138,15JAN2017
+IA01400,0000014,IAD,RDU,12,0,138,26JAN2017
+IA01401,0000014,IAD,RDU,12,0,138,28JAN2017
+IA01405,0000014,IAD,RDU,12,0,138,28JAN2017
+IA01405,0000014,IAD,RDU,12,0,138,29JAN2017
+IA01502,0000015,RDU,SEA,16,34,251,01JAN2017
+IA01601,0000016,SEA,RDU,16,34,251,26JAN2017
+IA01703,0000017,SEA,SFO,12,0,138,06JAN2017
+IA01703,0000017,SEA,SFO,12,0,138,09JAN2017
+IA01701,0000017,SEA,SFO,12,0,138,25JAN2017
+IA01903,0000019,RDU,BOS,12,0,138,09JAN2017
+IA02001,0000020,BOS,RDU,12,0,138,08JAN2017
+IA02001,0000020,BOS,RDU,12,0,138,28JAN2017
+IA02102,0000021,RDU,DFW,12,0,138,02JAN2017
+IA02201,0000022,DFW,RDU,12,0,138,09JAN2017
+IA02200,0000022,DFW,RDU,12,0,138,22JAN2017
+IA02200,0000022,DFW,RDU,12,0,138,23JAN2017
+IA02305,0000023,RDU,BHM,12,0,138,02JAN2017
+IA02304,0000023,RDU,BHM,12,0,138,06JAN2017
+IA02301,0000023,RDU,BHM,12,0,138,11JAN2017
+IA02301,0000023,RDU,BHM,12,0,138,20JAN2017
+IA02302,0000023,RDU,BHM,12,0,138,28JAN2017
+IA02404,0000024,BHM,RDU,12,0,138,14JAN2017
+IA02400,0000024,BHM,RDU,12,0,138,16JAN2017
+IA02403,0000024,BHM,RDU,12,0,138,16JAN2017
+IA02400,0000024,BHM,RDU,12,0,138,25JAN2017
+IA02405,0000024,BHM,RDU,12,0,138,27JAN2017
+IA02503,0000025,RDU,IND,12,0,138,21JAN2017
+IA02504,0000025,RDU,IND,12,0,138,24JAN2017
+IA02600,0000026,IND,RDU,12,0,138,02JAN2017
+IA02605,0000026,IND,RDU,12,0,138,05JAN2017
+IA02603,0000026,IND,RDU,12,0,138,16JAN2017
+IA02703,0000027,RDU,MIA,12,0,138,17JAN2017
+;;;;
+data certadv.capacity;
+   attrib FlightID length=$7 label='Flight Number';
+   attrib RouteID length=$7 label='Route Number';
+   attrib Origin length=$3 label='Start Point';
+   attrib Dest length=$3 label='Destination';
+   attrib Cap1st length=8 label='Aircraft Capacity - First Class Passengers' format=8. informat=8.;
+   attrib CapBusiness length=8 label='Aircraft Capacity - Business Class Passengers' format=8. informat=8.;
+   attrib CapEcon length=8 label='Aircraft Capacity - Economy Class Passengers' format=8. informat=8.;
+
+   infile datalines dsd;
+   input
+      FlightID
+      RouteID
+      Origin
+      Dest
+      Cap1st:BEST32.
+      CapBusiness:BEST32.
+      CapEcon:BEST32.
+   ;
+datalines4;
+IA00100,0000001,RDU,LHR,14,30,163
+IA00201,0000002,LHR,RDU,14,30,163
+IA00300,0000003,RDU,FRA,14,30,163
+IA00400,0000004,FRA,RDU,14,30,163
+IA00500,0000005,RDU,JFK,16,,251
+IA00600,0000006,JFK,RDU,16,,251
+IA00700,0000007,RDU,SFO,16,,251
+IA00800,0000008,SFO,RDU,16,,251
+IA00900,0000009,RDU,LAX,16,,251
+IA01000,0000010,LAX,RDU,16,,251
+IA01100,0000011,RDU,ORD,12,,138
+IA01200,0000012,ORD,RDU,12,,138
+IA01300,0000013,RDU,IAD,12,,138
+IA01400,0000014,IAD,RDU,12,,138
+IA01500,0000015,RDU,SEA,16,,251
+IA01600,0000016,SEA,RDU,16,,251
+IA01700,0000017,SEA,SFO,12,,138
+IA01800,0000018,SFO,SEA,12,,138
+IA01900,0000019,RDU,BOS,12,,138
+IA02000,0000020,BOS,RDU,12,,138
+IA02100,0000021,RDU,DFW,12,,138
+IA02200,0000022,DFW,RDU,12,,138
+IA02300,0000023,RDU,BHM,12,,138
+IA02400,0000024,BHM,RDU,12,,138
+IA02500,0000025,RDU,IND,12,,138
+IA02600,0000026,IND,RDU,12,,138
+IA02700,0000027,RDU,MIA,12,,138
+IA02800,0000028,MIA,RDU,12,,138
+IA02900,0000029,SFO,HNL,14,30,163
+IA03000,0000030,HNL,SFO,14,30,163
+IA03100,0000031,SFO,ANC,16,,251
+IA03200,0000032,ANC,SFO,16,,251
+IA03300,0000033,RDU,ANC,14,30,163
+IA03400,0000034,ANC,RDU,14,30,163
+IA03500,0000035,RDU,BNA,12,,138
+IA03600,0000036,BNA,RDU,12,,138
+IA03700,0000037,RDU,MSY,12,,138
+IA03800,0000038,MSY,RDU,12,,138
+IA03900,0000039,RDU,MCI,12,,138
+IA04000,0000040,MCI,RDU,12,,138
+IA04100,0000041,RDU,PWM,12,,138
+IA04200,0000042,PWM,RDU,12,,138
+IA04300,0000043,LHR,CDG,14,,125
+IA04400,0000044,CDG,LHR,14,,125
+IA04500,0000045,LHR,GLA,14,,125
+IA04600,0000046,GLA,LHR,14,,125
+IA04700,0000047,LHR,FRA,14,,125
+IA04800,0000048,FRA,LHR,14,,125
+IA04900,0000049,LHR,BRU,14,,125
+IA05000,0000050,BRU,LHR,14,,125
+;;;;
+data certadv.westaust;
+   attrib Code length=$3 label='Airport Code';
+   attrib City length=$50 label='City Where Airport is Located';
+   attrib Country length=$40 label='Country Where Airport is Located';
+   attrib Name length=$50 label='Airport Name';
+
+   infile datalines dsd;
+   input
+      Code
+      City
+      Country
+      Name
+   ;
+datalines4;
+AGY,"Argyle Downs, Western Australia",Australia,
+ALH,"Albany, Western Australia",Australia,
+BBE,"Big Bell, Western Australia",Australia,
+BDW,"Bedford Downs, Western Australia",Australia,
+BEE,"Beagle Bay, Western Australia",Australia,
+BIW,"Billiluna Station, Western Australia",Australia,
+BME,"Broome, Western Australia",Australia,
+BQW,"Balgo Hills, Western Australia", Australia,
+BUY,"Bunbury, Western Australia",Australia,
+BVZ,"Beverley Springs, Western Australia",Australia,
+BWB,"Barrow Island, Western Australia",Australia,
+CBC,"Cherrabun, Western Australia",Australia,
+CIE,"Collie, Western Australia",Australia,
+COY,"Coolawanyah, Western Australia",Australia,
+CRY,"Carlton Hill, Western Australia",Australia,
+CUY,"Cue, Western Australia",Australia,
+CVQ,"Carnarvon, Western Australia",Australia,
+CXQ,"Christmas Creek, Western Australia",Australia,
+DNM,"Denham, Western Australia",Australia,
+DOX,"Dongara, Western Australia",Australia,
+DRB,"Derby, Western Australia",Australia,
+ENB,"Eneabba, Western Australia",Australia,
+EPR,"Esperance, Western Australia",Australia,
+EUC,"Eucla, Western Australia",Australia,
+FIZ,"Fitzroy Crossing, Western Australia",Australia,
+FOS,"Forrest, Western Australia",Australia,
+FSL,"Fossil Downs, Western Australia",Australia,
+GBV,"Gibb River, Western Australia",Australia,
+GDD,"Gordon Downs, Western Australia",Australia,
+GET,"Geraldton, Western Australia",Australia,
+GLY,"Mt. Goldworthy, Western Australia",Australia,
+GSC,"Gascoyne Junction, Western Australia",Australia,
+HCQ,"Halls Creek, Western Australia",Australia,
+HLL,"Hillside, Western Australia",Australia,
+JAD,"Jandakot, Western Australia",Australia,
+JFM,"Fremantle, Western Australia",Australia,
+JUR,"Jurien Bay, Western Australia",Australia,
+KAX,"Kalbarri, Western Australia",Australia,
+KBD,"Kimberly Downs, Western Australia",Australia,
+KDB,"Kambalda, Western Australia",Australia,
+KGI,"Kalgoorlie, Western Australia",Australia,
+KNI,"Katanning, Western Australia",Australia,
+KNX,"Kununurra, Western Australia",Australia,
+KTA,"Dampier, Western Australia",Australia,Karratha,
+LDW,"Lansdowne Station, Western Australia",Australia,
+LEA,"Learmouth (Exmouth), Western Australia",Australia,
+LER,"Leinster, Western Australia",Australia,
+LLL,"Lissadel, Western Australia",Australia,
+LNO,"Leonora, Western Australia",Australia,
+LVO,"Laverton, Western Australia",Australia,
+;;;;
+data certadv.newemps;
+   attrib EmpID length=$6;
+   attrib LastName length=$15;
+   attrib Phone length=8;
+   attrib Location length=$13;
+   attrib Division length=$30;
+
+   infile datalines dsd;
+   input
+      EmpID
+      LastName
+      Phone
+      Location
+      Division
+   ;
+datalines4;
+E00490,CANCELLO,1015,ROME,FINANCE & IT
+E00496,PRESTON,1111,LONDON,FINANCE & IT
+E00499,ZILSTORFF,1087,COPENHAGEN,AIRPORT OPERATIONS
+E00500,LEY,1110,FRANKFURT,FINANCE & IT
+E00503,BRAMMER,1008,COPENHAGEN,SALES & MARKETING
+E00514,JENSEN,1032,COPENHAGEN,AIRPORT OPERATIONS
+E00515,MAGGS,1082,FRANKFURT,AIRPORT OPERATIONS
+E00519,MOHRMANN,1119,FRANKFURT,AIRPORT OPERATIONS
+E00530,FROMKORTH,1041,FRANKFURT,AIRPORT OPERATIONS
+E00532,KOITZSCH,1095,FRANKFURT,FLIGHT OPERATIONS
+E00191,GOH,1001,SINGAPORE,SALES & MARKETING
+E00203,ISHII,1016,TOKYO,FINANCE & IT
+E00251,TAKENAKA,1062,TOKYO,HUMAN RESOURCES & FACILITIES
+E00270,YOSHIKAWA,1079,TOKYO,FLIGHT OPERATIONS
+E00349,TIDBALL,1073,TOKYO,FLIGHT OPERATIONS
+E00378,HIRATA,1009,TOKYO,SALES & MARKETING
+E00399,NOMURA,1042,TOKYO,AIRPORT OPERATIONS
+E00401,SATO,1053,TOKYO,HUMAN RESOURCES & FACILITIES
+E00464,IMAKI,1012,TOKYO,FINANCE & IT
+E00470,BABA,1005,TOKYO,SALES & MARKETING
+E00531,LEONG,1002,SINGAPORE,HUMAN RESOURCES & FACILITIES
+E00687,TANEBE,1064,TOKYO,AIRPORT OPERATIONS
+E00761,WANG,1008,SINGAPORE,SALES & MARKETING
+E00777,ARAI,1004,TOKYO,SALES & MARKETING
+E00784,ZUSHI,1081,TOKYO,AIRPORT OPERATIONS
+E00019,DANZIN,1005,BRUSSELS,SALES & MARKETING
+E00059,BAUWENS,1001,BRUSSELS,SALES & MARKETING
+E00068,PENDERGRASS,1060,SYDNEY,HUMAN RESOURCES & FACILITIES
+E00070,TENGESDAL,1029,OSLO,HUMAN RESOURCES & FACILITIES
+E00125,VRANCKX,1035,BRUSSELS,AIRPORT OPERATIONS
+E00129,DIERCHX,1012,BRUSSELS,FINANCE & IT
+E00131,STEENERSEN,1024,OSLO,HUMAN RESOURCES & FACILITIES
+E00159,VANDENBUSSCHE,1034,BRUSSELS,AIRPORT OPERATIONS
+E00228,MIDYA,1054,SYDNEY,HUMAN RESOURCES & FACILITIES
+E00230,KOEKEMOER,1005,JOHANNESBURG,SALES & MARKETING
+E00232,TREVEN,1006,LJUBLJANA,SALES & MARKETING
+E00234,LAANTI,1013,HELSINKI,FINANCE & IT
+E00253,LAHANE,1043,SYDNEY,AIRPORT OPERATIONS
+E00266,TRAN,1075,SYDNEY,FLIGHT OPERATIONS
+E00293,GUNDHUS,1007,OSLO,SALES & MARKETING
+E00320,COOPMANS,1003,BRUSSELS,SALES & MARKETING
+E00326,OSBORNE,1019,WELLINGTON,HUMAN RESOURCES & FACILITIES
+E00335,RAICE,1063,SYDNEY,AIRPORT OPERATIONS
+E00346,NICHOLSON,1017,WELLINGTON,HUMAN RESOURCES & FACILITIES
+E00368,JONES,1040,SYDNEY,AIRPORT OPERATIONS
+E00382,FORSTER,1023,SYDNEY,HUMAN RESOURCES & FACILITIES
+E00389,LY,1003,HONG KONG,SALES & MARKETING
+E00436,TAHTCHIEV,1028,OSLO,HUMAN RESOURCES & FACILITIES
+E00449,SIU,1070,SYDNEY,FLIGHT OPERATIONS
+E00450,MUSAKKA,1016,HELSINKI,FINANCE & IT
+;;;;
+data certadv.allemps;
+   attrib EmpID length=$6;
+   attrib LastName length=$15;
+   attrib Phone length=$4;
+   attrib Location length=$13;
+   attrib Division length=$30;
+
+   infile datalines dsd;
+   input
+      EmpID
+      LastName
+      Phone
+      Location
+      Division
+   ;
+datalines4;
+E00010,FOSKEY,1666,CARY,AIRPORT OPERATIONS
+E00015,BROWN,1263,CARY,AIRPORT OPERATIONS
+E00025,BROCKLEBANK,1248,CARY,AIRPORT OPERATIONS
+E00029,MAROON,1325,CARY,AIRPORT OPERATIONS
+E00042,ANDERSON,1045,CARY,AIRPORT OPERATIONS
+E00053,CURTIS,1468,CARY,AIRPORT OPERATIONS
+E00056,POOLE,1068,TORONTO,AIRPORT OPERATIONS
+E00062,JONES,2046,CARY,AIRPORT OPERATIONS
+E00064,LOWMAN,2232,CARY,AIRPORT OPERATIONS
+E00067,OJEDA,2483,CARY,AIRPORT OPERATIONS
+E00069,STEWART JR.,2889,CARY,AIRPORT OPERATIONS
+E00077,TRACEY,1520,CARY,AIRPORT OPERATIONS
+E00078,STEVENSON,2886,CARY,AIRPORT OPERATIONS
+E00079,STONE,1086,TORONTO,AIRPORT OPERATIONS
+E00080,BAGGETT,1085,CARY,AIRPORT OPERATIONS
+E00086,LYLE,1319,CARY,AIRPORT OPERATIONS
+E00097,LUNNEY,2243,CARY,AIRPORT OPERATIONS
+E00101,WALSH,3082,CARY,AIRPORT OPERATIONS
+E00102,YON,3236,CARY,AIRPORT OPERATIONS
+E00108,VAN DUSEN,1065,ROCKVILLE,AIRPORT OPERATIONS
+E00111,HOTARD,1236,CARY,AIRPORT OPERATIONS
+E00115,BAILEY,1087,CARY,AIRPORT OPERATIONS
+E00119,REID,1433,CARY,AIRPORT OPERATIONS
+E00121,SWEETLAND,2930,CARY,AIRPORT OPERATIONS
+E00123,SCHWAB,1468,CARY,AIRPORT OPERATIONS
+E00124,FIALA,1633,CARY,AIRPORT OPERATIONS
+E00128,DAURITY,1119,CARY,AIRPORT OPERATIONS
+E00138,RAY,2640,CARY,AIRPORT OPERATIONS
+E00146,BROWNRIGG,1268,CARY,AIRPORT OPERATIONS
+E00153,WALTERS,3084,CARY,AIRPORT OPERATIONS
+E00155,BROWNING,1267,CARY,AIRPORT OPERATIONS
+E00157,MUSISA,2436,CARY,AIRPORT OPERATIONS
+E00158,DANA,1117,CARY,AIRPORT OPERATIONS
+E00160,COX,1441,CARY,AIRPORT OPERATIONS
+E00162,KEA,1265,CARY,AIRPORT OPERATIONS
+E00164,SMITH,1085,TORONTO,AIRPORT OPERATIONS
+E00174,BLAHUNKA,1039,CARY,AIRPORT OPERATIONS
+E00177,NEWELL,1067,AUSTIN,AIRPORT OPERATIONS
+E00185,BASS,1120,CARY,AIRPORT OPERATIONS
+E00189,LAIR,1289,CARY,AIRPORT OPERATIONS
+E00196,KELLY,1268,CARY,AIRPORT OPERATIONS
+E00201,SMITH,2844,CARY,AIRPORT OPERATIONS
+E00206,MURDOCK,2432,CARY,AIRPORT OPERATIONS
+E00210,MACKENZIE,2249,CARY,AIRPORT OPERATIONS
+E00213,DICKEY,1519,CARY,AIRPORT OPERATIONS
+E00226,BAUCOM,1124,CARY,AIRPORT OPERATIONS
+E00231,SPENCER,2868,CARY,AIRPORT OPERATIONS
+E00236,BAILEY,1088,CARY,AIRPORT OPERATIONS
+E00243,FILIPOWSKI,1635,CARY,AIRPORT OPERATIONS
+E00249,YUAN,3241,CARY,AIRPORT OPERATIONS
+;;;;
 data certadv.one;
    input x @3 a $3-4;
 datalines;
@@ -8185,6 +9799,72 @@ datalines;
 1 x
 2 y
 3 z
+;;;;
+data certadv.store1;
+input Wk Sales;
+format Sales dollar8.2;
+datalines;
+1 515.07
+2 772.29
+3 888.88
+4 1000.01
+;;;;
+data certadv.store2;
+input Wk Sales;
+format Sales dollar8.2;
+datalines;
+1 1368.99
+2 1506.23
+3 1200.57
+4 1784.11
+5 43.00
+;;;;
+data certadv.table1;
+input G3 @4 Z $4-5;
+datalines;
+89 FL
+46 UI
+47 BA
+;;;;
+data certadv.table2;
+input G3 @4 R $4-5;
+datalines;
+46 BC
+85 FL
+99 BA
+;;;;
+data certadv.wchill;
+   attrib TmpNeg10 length=8;
+   attrib TempNeg5 length=8;
+   attrib Temp0 length=8;
+   attrib Temp5 length=8;
+   attrib Temp10 length=8;
+   attrib Temp15 length=8;
+   attrib Temp20 length=8;
+   attrib Temp25 length=8;
+   attrib Temp30 length=8;
+
+   infile datalines dsd;
+   input
+      TmpNeg10
+      TempNeg5
+      Temp0
+      Temp5
+      Temp10
+      Temp15
+      Temp20
+      Temp25
+      Temp30
+   ;
+datalines4;
+-22,-16,-11,-5,1,7,13,19,25
+-28,-22,-16,-10,-4,3,9,15,21
+-32,-26,-19,-13,-7,0,6,13,19
+-35,-29,-22,-15,-9,-2,4,11,17
+-37,-31,-24,-17,-11,-4,3,9,16
+-39,-33,-26,-19,-12,-5,1,8,15
+-41,-34,-27,-21,-14,-7,0,7,14
+-43,-36,-29,-22,-15,-8,-1,6,13
 ;;;;
 data certadv.salesstaff;
   infile datalines dsd truncover;
