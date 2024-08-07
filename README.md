@@ -22,6 +22,7 @@ We welcome your contributions! :handshake: Please read [CONTRIBUTING.md](./CONTR
 
 ### License
 This project is licensed under the [Apache 2.0 License](./LICENSE).
+
 ### Additional Resources
 * [SAS® Certified Specialist Prep Guide: Base Programming Using SAS® 9.4](https://www.sas.com/store/prodBK_72102_en.html)
 * [SAS® Certified Professional Prep Guide: Advanced Programming Using SAS® 9.4](https://www.sas.com/store/books/categories/certification-guide/sas-certified-professional-prep-guide-advanced-programming-using-sas-9-4/prodBK_73006_en.html)
